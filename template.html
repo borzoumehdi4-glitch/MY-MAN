@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ING Macro Scenarios</title>
+<style>
+:root{--bg:#0f1419;--card:#1a212b;--line:#2b3542;--tx:#e6e9ee;--mut:#8b97a7;--base:#4a90e2;--bull:#2ecc71;--bear:#e74c3c;--tail:#a56cf0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,Segoe UI,Arial,sans-serif}
+header{padding:18px 28px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+h1{margin:0;font-size:20px}.mut{color:var(--mut);font-size:13px}
+nav{display:flex;gap:6px}nav button{background:var(--card);color:var(--tx);border:1px solid var(--line);padding:7px 14px;border-radius:6px;cursor:pointer}
+nav button.on{background:var(--base);border-color:var(--base)}
+main{padding:24px 28px;max-width:1400px;margin:auto}
+.filters{margin-bottom:16px;display:flex;gap:6px;flex-wrap:wrap}
+.chip{padding:3px 10px;border-radius:12px;border:1px solid var(--line);cursor:pointer;font-size:13px;background:var(--card)}.chip.on{background:var(--tx);color:var(--bg)}
+.story{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;margin-bottom:22px}
+.story h2{margin:0 0 2px;font-size:18px}.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:10px;background:var(--line);margin:0 4px 4px 0}
+.scs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:14px}
+.sc{border:1px solid var(--line);border-top:4px solid var(--c);border-radius:8px;padding:12px;background:#151b23}
+.sc h3{margin:0;font-size:15px}.sc .t{color:var(--c);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+.pr{font-size:28px;font-weight:700;margin:4px 0}.up{color:var(--bull)}.dn{color:var(--bear)}.pr small{font-size:13px;margin-left:6px}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:8px}.bar i{display:block;height:100%;background:var(--c)}
+.sc p{margin:6px 0;font-size:13.5px}.sc b{color:var(--mut);font-weight:600}
+svg{width:100%;height:150px;margin-top:14px;background:#151b23;border-radius:8px}
+.legend span{margin-right:14px;font-size:12px}.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;background:var(--c)}
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin-bottom:8px}summary{cursor:pointer;font-weight:600}
+a{color:var(--base)}.log{padding:8px 0;border-bottom:1px solid var(--line)}
+.empty{padding:40px;text-align:center;color:var(--mut)}
+</style></head><body>
+<header><div><h1>ING Macro Stories &amp; Scenarios</h1><div class="mut" id="meta"></div></div>
+<nav id="nav"></nav></header>
+<main id="main"></main>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+const S=JSON.parse(document.getElementById('data').textContent);
+const COL={base:'var(--base)',bull:'var(--bull)',bear:'var(--bear)',tail:'var(--tail)'};
+const LBL={base:'Base case',bull:'Upside',bear:'Downside',tail:'Tail risk'};
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let view='stories',cat='All';
+const shift=sc=>{const h=sc.history||[];return h.length>1?h[h.length-1].probability-h[h.length-2].probability:null};
+function chart(st){
+ const series=st.scenarios.map(sc=>({sc,h:sc.history||[]})).filter(x=>x.h.length);
+ if(!series.length)return'';
+ const dates=[...new Set(series.flatMap(x=>x.h.map(p=>p.date)))].sort();
+ const W=600,H=150,P=24,x=d=>dates.length>1?P+(W-2*P)*dates.indexOf(d)/(dates.length-1):W/2,y=v=>H-P-(H-2*P)*v/100;
+ let g=[0,50,100].map(v=>`<line x1="${P}" x2="${W-P}" y1="${y(v)}" y2="${y(v)}" stroke="#2b3542"/><text x="2" y="${y(v)+4}" fill="#8b97a7" font-size="10">${v}</text>`).join('');
+ g+=dates.map(d=>`<text x="${x(d)}" y="${H-6}" fill="#8b97a7" font-size="10" text-anchor="middle">${esc(d.slice(5))}</text>`).join('');
+ for(const {sc,h} of series){const c={base:'#4a90e2',bull:'#2ecc71',bear:'#e74c3c',tail:'#a56cf0'}[sc.type]||'#ccc';
+  g+=`<polyline fill="none" stroke="${c}" stroke-width="2" points="${h.map(p=>x(p.date)+','+y(p.probability)).join(' ')}"/>`+h.map(p=>`<circle cx="${x(p.date)}" cy="${y(p.probability)}" r="3" fill="${c}"><title>${esc(sc.name)} ${p.probability}% (${esc(p.date)}) ${esc(p.note)}</title></circle>`).join('')}
+ return `<svg viewBox="0 0 ${W} ${H}">${g}</svg><div class="legend">${series.map(({sc})=>`<span style="--c:${COL[sc.type]||'#ccc'}"><i></i>${esc(sc.name)}</span>`).join('')}</div>`}
+function scCard(sc){const d=shift(sc);
+ return `<div class="sc" style="--c:${COL[sc.type]||'#888'}"><div class="t">${LBL[sc.type]||''}</div><h3>${esc(sc.name)}</h3>
+ <div class="pr">${sc.probability}%${d!==null?`<small class="${d>=0?'up':'dn'}">${d>=0?'▲':'▼'} ${Math.abs(d)}</small>`:''}</div>
+ <div class="bar"><i style="width:${sc.probability}%"></i></div><p>${esc(sc.description)}</p>
+ ${(sc.triggers||[]).length?`<p><b>Watch:</b> ${sc.triggers.map(esc).join('; ')}</p>`:''}
+ ${sc.fx_impact?`<p><b>FX impact:</b> ${esc(sc.fx_impact)}</p>`:''}</div>`}
+function stories(){
+ if(!S.stories.length)return'<div class="empty">No stories yet. Paste ING articles in the chat to populate this dashboard.</div>';
+ const cats=['All',...new Set(S.stories.map(s=>s.category).filter(Boolean))];
+ const list=S.stories.filter(s=>cat==='All'||s.category===cat);
+ return `<div class="filters">${cats.map(c=>`<span class="chip ${c===cat?'on':''}" onclick="cat='${esc(c)}';render()">${esc(c)}</span>`).join('')}</div>`+
+ list.map(s=>`<section class="story"><h2>${esc(s.name)}</h2><div class="mut">${esc(s.category)} · updated ${esc(s.updated)}</div>
+ <p>${esc(s.summary)}</p>${(s.pairs||[]).map(p=>`<span class="tag">${esc(p)}</span>`).join('')}
+ <div class="scs">${s.scenarios.map(scCard).join('')}</div>${chart(s)}</section>`).join('')}
+function papers(){return S.papers.length?[...S.papers].sort((a,b)=>b.date.localeCompare(a.date)).map(p=>`<details><summary>${esc(p.date)} – ${esc(p.title)}</summary><p>${esc(p.summary)}</p>${p.url?`<p><a href="${esc(p.url)}" target="_blank" rel="noopener">Source</a></p>`:''}<div class="mut">Stories: ${(p.story_ids||[]).map(esc).join(', ')}</div></details>`).join(''):'<div class="empty">No papers yet.</div>'}
+function changes(){return S.changelog.length?[...S.changelog].sort((a,b)=>b.date.localeCompare(a.date)).map(c=>`<div class="log"><b>${esc(c.date)}</b> – ${esc(c.text)}</div>`).join(''):'<div class="empty">No changes logged yet.</div>'}
+function render(){
+ document.getElementById('meta').textContent=`${S.papers.length} papers · ${S.stories.length} stories`;
+ const V={stories:'Stories & scenarios',papers:'Papers',changes:'What changed'};
+ document.getElementById('nav').innerHTML=Object.entries(V).map(([k,v])=>`<button class="${k===view?'on':''}" onclick="view='${k}';render()">${v}</button>`).join('');
+ document.getElementById('main').innerHTML={stories,papers,changes}[view]()}
+render();
+</script></body></html>

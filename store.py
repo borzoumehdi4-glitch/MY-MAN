@@ -4,7 +4,6 @@ from datetime import date
 from pathlib import Path
 
 DATA_FILE = Path(__file__).parent / "data" / "state.json"
-INBOX = Path(__file__).parent / "inbox"
 
 EMPTY = {"papers": [], "stories": [], "changelog": []}
 
@@ -55,9 +54,3 @@ def set_probability(state, story_id, scenario_name, prob, note, when=None):
     raise KeyError((story_id, scenario_name))
 
 
-def save_inbox_text(title, text):
-    INBOX.mkdir(exist_ok=True)
-    safe = "".join(c if c.isalnum() else "-" for c in title)[:60] or "paper"
-    p = INBOX / f"{date.today().isoformat()}-{safe}.txt"
-    p.write_text(text, encoding="utf-8")
-    return p
