@@ -1,0 +1,22 @@
+# working files for the photo pack (not part of the deliverable)
+_cand/
+pex/
+out/
+fonts/
+*.log
+_sheet*.jpg
+_short*.jpg
+_card*.jpg
+_captioncheck.jpg
+check_blazer.jpg
+piercing.jpg
+hologram.jpg
+cat18.jpg
+harvest.py
+preview.py
+pexels.py
+assemble.py
+make_pack.py
+pex_sheet*.jpg
+_candidates_commons.json
+_candidates*.json
