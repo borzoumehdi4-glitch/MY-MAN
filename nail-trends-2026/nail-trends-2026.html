@@ -46,18 +46,18 @@ section[id]{scroll-margin-top:76px}
 h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;
 font-size:clamp(24px,3vw,34px);margin:0 0 6px}
 .lede{color:var(--muted);max-width:72ch;margin:0 0 22px}
-.themes{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.themes{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:16px}
 .theme{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
 .theme h3{font-family:Georgia,serif;font-weight:400;font-size:19px;margin:0 0 8px}
 .theme p{margin:0;color:var(--muted);font-size:14.5px}
-.top{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+.top{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(280px,100%),1fr));
 gap:10px;counter-reset:rank;padding:0;margin:0}
 .top li{list-style:none;background:var(--card);border:1px solid var(--line);
 border-radius:12px;padding:12px 14px;display:flex;gap:12px;align-items:baseline;
 counter-increment:rank;font-size:14.5px}
 .top li::before{content:counter(rank,decimal-leading-zero);font-family:Georgia,serif;
 color:var(--gold);font-size:15px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(330px,100%),1fr));gap:18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;
 overflow:hidden;display:flex;flex-direction:column;break-inside:avoid}
 .swatch{display:flex;height:46px}
@@ -81,13 +81,13 @@ border-radius:0 10px 10px 0;padding:10px 12px;font-size:13.5px;font-style:italic
 .diff i.on{background:var(--accent)}
 .src{font-size:11.5px;color:var(--muted);margin:0;padding-top:10px;
 border-top:1px dashed var(--line)}
-.cal{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.cal{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:16px}
 .cal div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
 .cal h3{font-family:Georgia,serif;font-weight:400;font-size:18px;margin:0 0 10px;
 color:var(--accent)}
 .cal ul{margin:0;padding-left:16px;font-size:14px;color:var(--muted)}
 .cal li{margin-bottom:4px}
-.script{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:10px;
+.script{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:10px;
 margin:0;padding:0}
 .script div{background:var(--card);border:1px solid var(--line);border-radius:12px;
 padding:12px 14px;font-size:14px}
