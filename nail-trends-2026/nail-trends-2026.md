@@ -72,7 +72,7 @@ Pantone named Cloud Dancer its 2026 Colour of the Year and the nail world transl
 - **Wearability:** Everyday / office-safe
 - **Difficulty:** 1/5
 - **Ask for:** "Sheer milky white, two thin coats, no visible brushstrokes, high-gloss top coat."
-- **Sources:** Good Housekeeping, ELLE UK, Harper's Bazaar UK, Marie Claire (4/11)
+- **Sources** (4/11): Good Housekeeping, ELLE UK, Harper's Bazaar UK, Marie Claire
 
 #### 02. Ultra-sheer washes
 
@@ -86,7 +86,7 @@ Vogue lists ultra-sheer washes among its seven biggest trends: a single veil of 
 - **Wearability:** Everyday / minimal
 - **Difficulty:** 1/5
 - **Ask for:** "One coat of sheer warm pink, cuticle-clean, glass top coat - nothing opaque."
-- **Sources:** Vogue, Harper's Bazaar UK, Marie Claire (spring) (3/11)
+- **Sources** (3/11): Vogue, Harper's Bazaar UK, Marie Claire (spring)
 
 #### 03. Juicy glass / jelly glow
 
@@ -100,7 +100,7 @@ Syrup-gel colour with a wet, see-through depth that makes nails read as "juicy".
 - **Wearability:** Everyday to evening
 - **Difficulty:** 2/5
 - **Ask for:** "Jelly/syrup gel in a translucent rose, three thin coats, high-build gloss top."
-- **Sources:** Good Housekeeping, ELLE UK, Marie Claire (3/11)
+- **Sources** (3/11): Good Housekeeping, ELLE UK, Marie Claire
 
 #### 04. Soft chrome & pearl glaze
 
@@ -114,7 +114,7 @@ Harper's Bazaar's Juanita Huber-Millet describes 2026 chrome as "whisper-thin me
 - **Wearability:** Everyday to occasion
 - **Difficulty:** 2/5
 - **Ask for:** "Pearl chrome powder over a warm nude - keep it a soft sheen, not mirror."
-- **Sources:** Harper's Bazaar UK, ELLE UK, Allure (fall colour) (3/11)
+- **Sources** (3/11): Harper's Bazaar UK, ELLE UK, Allure (fall colour)
 
 #### 05. Velvet chrome
 
@@ -128,7 +128,7 @@ Two 2026 favourites collided. Vogue predicts velvet nails finished with a cat-ey
 - **Wearability:** Evening / statement
 - **Difficulty:** 3/5
 - **Ask for:** "Velvet cat-eye gel with a chrome topper, magnetic pull front to back."
-- **Sources:** Vogue, Good Housekeeping, ELLE UK (3/11)
+- **Sources** (3/11): Vogue, Good Housekeeping, ELLE UK
 
 #### 06. Cat-eye magnetic 3D
 
@@ -142,7 +142,7 @@ Magnetic pigment is pulled with a magnet into a band, a halo or a 3D dome. Artis
 - **Wearability:** Evening / statement
 - **Difficulty:** 3/5
 - **Ask for:** "Cat-eye gel over a dark base, magnetic halo effect, no craft glitter."
-- **Sources:** Good Housekeeping, Vogue, ELLE UK (3/11)
+- **Sources** (3/11): Good Housekeeping, Vogue, ELLE UK
 
 #### 07. Molten & mirror metallics
 
@@ -156,7 +156,7 @@ Full-coverage liquid metal - silver, gold, bronze - was the loudest finish of th
 - **Wearability:** Occasion / party
 - **Difficulty:** 2/5
 - **Ask for:** "Full-coverage chrome or metallic silver, no glitter particles, mirror top coat."
-- **Sources:** Allure (fall colour), Good Housekeeping, ELLE UK (3/11)
+- **Sources** (3/11): Allure (fall colour), Good Housekeeping, ELLE UK
 
 #### 08. Blown & ribbed glass
 
@@ -170,7 +170,7 @@ Allure's "blown glass" and Good Housekeeping's "ribbed glass" push the glass nai
 - **Wearability:** Statement / editorial
 - **Difficulty:** 5/5
 - **Ask for:** "Clear builder gel sculpted into ribs or bubbles, holographic flake, high dome."
-- **Sources:** Allure, Good Housekeeping, Harper's Bazaar (runway) (3/11)
+- **Sources** (3/11): Allure, Good Housekeeping, Harper's Bazaar (runway)
 
 ### Colour
 
@@ -186,7 +186,7 @@ Harper's Bazaar calls them "comfort colours": caramel, chai latte, buttery beige
 - **Wearability:** Everyday / office
 - **Difficulty:** 1/5
 - **Ask for:** "Warm caramel nude, sheer-to-medium coverage, gloss."
-- **Sources:** Harper's Bazaar UK, Marie Claire (2/11)
+- **Sources** (2/11): Harper's Bazaar UK, Marie Claire
 
 #### 10. Cool-toned browns / espresso
 
@@ -200,7 +200,7 @@ The mocha of 2024-25 has cooled and deepened. Good Housekeeping flags cool-toned
 - **Wearability:** Everyday to evening
 - **Difficulty:** 1/5
 - **Ask for:** "Cool espresso brown, opaque, satin or gloss."
-- **Sources:** Good Housekeeping, Allure (fall colour), Marie Claire (3/11)
+- **Sources** (3/11): Good Housekeeping, Allure (fall colour), Marie Claire
 
 #### 11. Matured reds
 
@@ -214,7 +214,7 @@ Red, but grown up. Harper's Bazaar calls it "matured reds" - brick, wine and Bor
 - **Wearability:** Everyday to evening
 - **Difficulty:** 1/5
 - **Ask for:** "Deep bordeaux red, opaque, high-gloss - no shimmer."
-- **Sources:** Harper's Bazaar UK, Allure (fall colour), Marie Claire (3/11)
+- **Sources** (3/11): Harper's Bazaar UK, Allure (fall colour), Marie Claire
 
 #### 12. Sapphire, electric & aqua blues
 
@@ -228,7 +228,7 @@ Blue split into two moods: the sapphire of Allure's fall 2026 report (shades suc
 - **Wearability:** Statement / holiday
 - **Difficulty:** 1/5
 - **Ask for:** "Opaque sapphire (or electric cobalt), gloss; chrome topper optional."
-- **Sources:** Good Housekeeping, ELLE UK, Allure (fall colour), Marie Claire (spring) (4/11)
+- **Sources** (4/11): Good Housekeeping, ELLE UK, Allure (fall colour), Marie Claire (spring)
 
 #### 13. Earthy greens
 
@@ -242,7 +242,7 @@ Olive, moss and chartreuse moved from the runway to the fingers. Allure's fall 2
 - **Wearability:** Everyday to statement
 - **Difficulty:** 1/5
 - **Ask for:** "Muddy olive green, opaque, matte or satin top coat."
-- **Sources:** Allure (fall colour), Marie Claire (2/11)
+- **Sources** (2/11): Allure (fall colour), Marie Claire
 
 #### 14. Not-quite-black
 
@@ -256,7 +256,7 @@ The compromise between black and colour: near-black plum, midnight navy and oxbl
 - **Wearability:** Evening / everyday for the bold
 - **Difficulty:** 1/5
 - **Ask for:** "Near-black plum, two coats, gloss - dark but not flat black."
-- **Sources:** Allure (fall colour), Marie Claire (2/11)
+- **Sources** (2/11): Allure (fall colour), Marie Claire
 
 #### 15. Cloudy pastels
 
@@ -270,7 +270,7 @@ The "Goldilocks" shades Allure describes as neither summery-bright nor wintry-da
 - **Wearability:** Everyday
 - **Difficulty:** 1/5
 - **Ask for:** "Cloudy lilac (or butter yellow) - sheer and milky, never neon."
-- **Sources:** Allure (fall colour), Marie Claire (spring) (2/11)
+- **Sources** (2/11): Allure (fall colour), Marie Claire (spring)
 
 ### Nail art
 
@@ -286,7 +286,7 @@ Allure's number-one art trend: pinstripes, barcode stripes, awning stripes and t
 - **Wearability:** Statement / everyday
 - **Difficulty:** 3/5
 - **Ask for:** "Two thin horizontal stripes across the tip, crisp edges, gloss."
-- **Sources:** Allure, Good Housekeeping, Harper's Bazaar (runway) (3/11)
+- **Sources** (3/11): Allure, Good Housekeeping, Harper's Bazaar (runway)
 
 #### 17. Micro polka dots
 
@@ -300,7 +300,7 @@ After 2025's full-size dots, 2026 does them micro: one or two millimetre spots i
 - **Wearability:** Everyday
 - **Difficulty:** 2/5
 - **Ask for:** "Micro dots, 1-2 mm, evenly spaced, on a sheer milky base."
-- **Sources:** Good Housekeeping, ELLE UK, Marie Claire (spring) (3/11)
+- **Sources** (3/11): Good Housekeeping, ELLE UK, Marie Claire (spring)
 
 #### 18. Glitzy French
 
@@ -314,7 +314,7 @@ The French tip got jewellery: crystal-studded tips, silver studs and rhinestone 
 - **Wearability:** Occasion
 - **Difficulty:** 4/5
 - **Ask for:** "Slim French tip covered in small crystals, set with crystal adhesive, no bulky gel."
-- **Sources:** Allure, Harper's Bazaar UK (2/11)
+- **Sources** (2/11): Allure, Harper's Bazaar UK
 
 #### 19. Soft, slim & milky French
 
@@ -328,7 +328,7 @@ The French softened: ultra-slim tips, diffused edges and tonal pairs - milky bas
 - **Wearability:** Everyday / bridal / office
 - **Difficulty:** 2/5
 - **Ask for:** "Soft diffused French, very thin tip, off-white on milky, no harsh line."
-- **Sources:** Harper's Bazaar UK, Good Housekeeping, Who What Wear, Allure (4/11)
+- **Sources** (4/11): Harper's Bazaar UK, Good Housekeeping, Who What Wear, Allure
 
 #### 20. Preppy plaid & argyle
 
@@ -342,7 +342,7 @@ Vogue's prep-school plaid and Good Housekeeping's argyle ride the argyle-knit re
 - **Wearability:** Statement / seasonal
 - **Difficulty:** 4/5
 - **Ask for:** "Plaid or argyle: jelly base, thin white criss-cross lines, one accent diamond."
-- **Sources:** Vogue, Good Housekeeping (2/11)
+- **Sources** (2/11): Vogue, Good Housekeeping
 
 #### 21. Textile textures: tweed, lace & silk
 
@@ -356,7 +356,7 @@ Chanel under Matthieu Blazy is the reference: tweed, woven texture, lace and sil
 - **Wearability:** Editorial / occasion
 - **Difficulty:** 5/5
 - **Ask for:** "Hand-painted lace (or tweed) on one accent nail, matte top coat to fake fabric."
-- **Sources:** Vogue, Who What Wear (2/11)
+- **Sources** (2/11): Vogue, Who What Wear
 
 #### 22. Celestial & halo nails
 
@@ -370,7 +370,7 @@ Two star-themed looks dominate. "Extra celestial" - silver metallic, crystals, 3
 - **Wearability:** Statement / evening
 - **Difficulty:** 3/5
 - **Ask for:** "Silver chrome with a few crystals at the cuticle, or a 2 mm halo outline."
-- **Sources:** Who What Wear, ELLE UK, Marie Claire (3/11)
+- **Sources** (3/11): Who What Wear, ELLE UK, Marie Claire
 
 #### 23. Nail piercing & hardware
 
@@ -384,7 +384,7 @@ Actual jewellery: tiny rings, bars and studs pierced through the free edge or se
 - **Wearability:** Statement / editorial
 - **Difficulty:** 5/5
 - **Ask for:** "One gold ring through the tip plus a stud at the base; drill and seal properly."
-- **Sources:** Allure, Good Housekeeping (2/11)
+- **Sources** (2/11): Allure, Good Housekeeping
 
 #### 24. Sculptural 3D accents
 
@@ -398,7 +398,7 @@ Three dimensions, restrained: micro pearls, delicate studs, soft gel swirls and 
 - **Wearability:** Occasion / subtle statement
 - **Difficulty:** 4/5
 - **Ask for:** "One sculpted pearl or chrome swirl per hand over a sheer nude, negative space."
-- **Sources:** Harper's Bazaar UK, Vogue, Good Housekeeping, Who What Wear (4/11)
+- **Sources** (4/11): Harper's Bazaar UK, Vogue, Good Housekeeping, Who What Wear
 
 #### 25. Animal print & bambicore
 
@@ -412,7 +412,7 @@ Leopard, deer print and horse motifs - Good Housekeeping labels the trend "bambi
 - **Wearability:** Statement
 - **Difficulty:** 4/5
 - **Ask for:** "Tonal leopard on two or three nails, brown on cream, tiny spots, matte top."
-- **Sources:** Good Housekeeping, Vogue, Marie Claire (3/11)
+- **Sources** (3/11): Good Housekeeping, Vogue, Marie Claire
 
 #### 26. Maximalist mix & glitchy glam
 
@@ -426,7 +426,7 @@ The counter-trend: mismatched hands, clashing colours, matte against shiny 3D, Y
 - **Wearability:** Statement
 - **Difficulty:** 4/5
 - **Ask for:** "Mismatched set: one hand matte brights, one hand gloss nudes, same accent charm."
-- **Sources:** Allure, ELLE UK, Who What Wear (3/11)
+- **Sources** (3/11): Allure, ELLE UK, Who What Wear
 
 ### Shape
 
@@ -442,7 +442,7 @@ The salon default for 2026. Harper's Bazaar's experts say shape is now "the hero
 - **Wearability:** Everyday to bridal
 - **Difficulty:** 2/5
 - **Ask for:** "Medium almond, apex at the stress point, tapered but not pointed."
-- **Sources:** Harper's Bazaar UK, Vogue, Good Housekeeping, Pure Nails (4/11)
+- **Sources** (4/11): Harper's Bazaar UK, Vogue, Good Housekeeping, Pure Nails
 
 #### 28. Soft square
 
@@ -456,7 +456,7 @@ The surprise of the spring 2026 runways: square tips returned, but soft - gently
 - **Wearability:** Everyday
 - **Difficulty:** 2/5
 - **Ask for:** "Soft square - straight sides, corners filed round, medium length."
-- **Sources:** Harper's Bazaar (runway), Good Housekeeping, Pure Nails (3/11)
+- **Sources** (3/11): Harper's Bazaar (runway), Good Housekeeping, Pure Nails
 
 #### 29. Squoval & short-and-sweet
 
@@ -470,7 +470,7 @@ Squoval is strong like a square, soft like an oval and the least likely to snag.
 - **Wearability:** Everyday / office / active
 - **Difficulty:** 1/5
 - **Ask for:** "Short squoval, rounded corners, sheer milky colour, glass top coat."
-- **Sources:** ELLE UK, Harper's Bazaar UK, Pure Nails, Good Housekeeping (4/11)
+- **Sources** (4/11): ELLE UK, Harper's Bazaar UK, Pure Nails, Good Housekeeping
 
 #### 30. Coffin & the cat-claw curve
 
@@ -484,7 +484,7 @@ Extra-long coffin appeared at Knwls, and Naomi Yasuda built a curved, feline "ca
 - **Wearability:** Editorial / statement
 - **Difficulty:** 5/5
 - **Ask for:** "Long coffin with a deep C-curve, or a cat-claw taper; expect extensions."
-- **Sources:** Harper's Bazaar (runway), Pure Nails (2/11)
+- **Sources** (2/11): Harper's Bazaar (runway), Pure Nails
 
 ## The 2026 calendar
 

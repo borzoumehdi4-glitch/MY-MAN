@@ -426,8 +426,8 @@ def write_md():
                 f"- **Wearability:** {t['wear']}",
                 f"- **Difficulty:** {t['diff']}/5",
                 f"- **Ask for:** \"{t['ask']}\"",
-                f"- **Sources:** {', '.join(SHORT[s] for s in t['sources'])} "
-                f"({len(t['sources'])}/{len(d.SOURCES)})",
+                f"- **Sources** ({len(t['sources'])}/{len(d.SOURCES)}): "
+                f"{', '.join(SHORT[s] for s in t['sources'])}",
                 "",
             ]
     lines += ["## The 2026 calendar", ""]
