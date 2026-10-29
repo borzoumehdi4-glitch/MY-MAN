@@ -40,7 +40,7 @@ cannot mistake a dead site for "nothing new".
 ## Updating the dashboard (unattended runbook)
 
 1. `git pull`
-2. `python3 feed.py --since <newest paper date in data/state.json> --md`
+2. `python3 feed.py --since <newest paper date in data/state.json> --md --macro`
 3. If it prints `Nothing new.` - stop. No commit, no rebuild.
 4. For each new paper: `python3 feed.py --text <url>`, then write a 2-4 sentence
    summary (keep the numbers, levels and forecasts; drop the build-up).
@@ -50,8 +50,42 @@ cannot mistake a dead site for "nothing new".
    trail is kept, and append one `changelog` line per change plus one for
    anything still pending (meetings, data, elections).
 7. `python3 build.py`
-8. `python3 test_feed.py` - must end with `8 tests passed`.
+8. `python3 test_feed.py` - must end with `10 tests passed`.
 9. `git add -A && git commit && git push`
+
+Batches are written as `seed_<date>.py` in the style of `seed_2026-10-23.py`
+(construct the state, then `store.set_probability`). `seed_2026-10-29.py` shows
+the re-runnable pattern: it skips URLs already stored and skips a probability
+that is already recorded for that date, so running it twice never duplicates a
+paper or a history point. `store.validate()` also fails loudly on duplicate ids
+or urls.
+
+## Catch-up and duplicate rules
+
+- **Duplicates:** every paper is matched by normalised URL (`feed.normalise`)
+  against `papers[].url`, so a paper can only be ingested once regardless of how
+  often a run happens. `store.validate()` backstops this.
+- **Missed days:** `feed.py` with no `--since` returns *everything* currently
+  listed but unprocessed, so a run after a week offline picks up the whole week.
+- **The listing window is the limit:** each section page lists roughly its 21
+  most recent items (~3 weeks) and is not paginated (`/page/2` serves page 1), so
+  a gap longer than that needs a manual sweep: `https://think.ing.com/articles/`
+  lists ~21 items on the same card markup and can be parsed with
+  `feed.parse_cards(feed.fetch(url), "articles")` (no CLI flag for it yet).
+- **Snaps** (`/snaps/...`) never appear on the section pages, and `/snaps/` only
+  redirects to the latest one, so the global RSS is the only route: run with
+  `--macro` or they will be missed - that is exactly how Lagarde's resignation
+  first came in on 2026-10-29.
+- Most RSS items ship with an empty `<date>`; `feed.py` falls back to the
+  article's `date_published` meta tag so `--since` does not silently drop them.
+
+## Scheduling
+
+One scheduled agent run per day. It works from a fresh clone, so the repo is the
+only state: `git pull` -> steps above -> `git push`. Nothing lives on the runner.
+Keep `--macro` on so ECB/eurozone snaps stay covered; drop it for a strict
+three-section view.
+
 
 ## Tests
 

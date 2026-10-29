@@ -106,6 +106,7 @@ def parse_cards(markup, section):
 
 ENTITY_RE = re.compile(r"&([a-zA-Z][a-zA-Z0-9]*);")
 XML_ENTITIES = {"amp", "lt", "gt", "quot", "apos"}
+DATE_META_RE = re.compile(r'<meta[^>]+name="date_published"[^>]+content="([^"]+)"')
 
 
 def _xml_safe(markup):
@@ -114,6 +115,15 @@ def _xml_safe(markup):
         lambda m: m.group(0) if m.group(1) in XML_ENTITIES else htmllib.unescape(m.group(0)),
         markup,
     )
+
+
+def article_date(url):
+    """Publication date from an article page's date_published meta tag."""
+    try:
+        match = DATE_META_RE.search(fetch(url))
+    except Exception:
+        return None
+    return match.group(1)[:10] if match else None
 
 
 def parse_rss(markup, words=MACRO_WORDS):
@@ -128,6 +138,8 @@ def parse_rss(markup, words=MACRO_WORDS):
         if not link:
             continue
         stamp = (node.findtext("date") or "").strip()
+        if not stamp:  # most RSS items ship without <date>; the page knows
+            stamp = article_date(link) or ""
         items.append(
             {
                 "url": normalise(link),

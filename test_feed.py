@@ -161,6 +161,33 @@ def test_article_text_strips_chrome():
     assert "JUNK" not in text, text
 
 
+def test_parse_rss_falls_back_to_page_date():
+    rss = RSS.replace("<date>2026-10-29T14:20:00+00:00</date>", "")
+    original = feed.article_date
+    feed.article_date = lambda url: "2026-10-29"
+    try:
+        items = feed.parse_rss(rss)
+    finally:
+        feed.article_date = original
+    assert items and items[0]["date"] == "2026-10-29", items
+
+
+def test_validate_catches_duplicate_papers():
+    import store
+
+    state = {
+        "papers": [
+            {"id": "a", "url": "https://think.ing.com/articles/x/"},
+            {"id": "a", "url": "https://think.ing.com/articles/x"},
+        ],
+        "stories": [],
+        "changelog": [],
+    }
+    problems = store.validate(state)
+    assert any("duplicate paper id" in p for p in problems), problems
+    assert any("duplicate paper url" in p for p in problems), problems
+
+
 def main():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_") and callable(v)]
     for test in tests:

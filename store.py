@@ -32,6 +32,17 @@ def validate(state):
         for pid in s.get("paper_ids", []):
             if pid not in paper_ids:
                 problems.append(f"{s['id']}: unknown paper {pid}")
+
+    # Guard against duplicate ingestion, which matters now that batches are automated.
+    seen_ids, seen_urls = {}, {}
+    for p in state["papers"]:
+        if p["id"] in seen_ids:
+            problems.append(f"duplicate paper id {p['id']}")
+        seen_ids[p["id"]] = True
+        url = p["url"].rstrip("/")
+        if url in seen_urls:
+            problems.append(f"duplicate paper url {url} ({seen_urls[url]} and {p['id']})")
+        seen_urls[url] = p["id"]
     return problems
 
 
