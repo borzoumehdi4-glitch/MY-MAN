@@ -213,6 +213,48 @@
         "france-ecb"
       ],
       "id": "webinar-2027-rates"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "A strong economy may not be enough to sway Spain's election",
+      "url": "https://think.ing.com/articles/spains-strong-economy-may-not-decide-the-election/",
+      "summary": "Spain's 29 November election has been overshadowed by a fatal high-speed rail collision near Urda in Toledo province that killed at least 69 people and led most parties to suspend campaigning, putting rail safety and public services into the debate alongside corruption cases touching the Socialists. The economy is still outperforming - 3Q GDP rose 0.6% QoQ and 2.7% YoY, well above most large eurozone peers - but unemployment climbed from 9.87% to 10.18% as the labour force grew 169,500 against 73,600 new jobs, harmonised inflation held at 4.9% and retail sales fell 1.4% YoY in September. The People's Party leads the polls and could reach a majority with Vox; Feijoo promises one million homes and a new Land Law within 100 days, against Socialist rent limits and eviction protection, while Spain added ~1.22m households between 2021 and 2025 but completed only ~466,000 homes. ING sees limited near-term macro impact - the energy shock and monetary tightening matter more - but a fragmented parliament would prolong the budget extensions and legislative paralysis.",
+      "story_ids": [
+        "france-ecb"
+      ],
+      "id": "spain-election-economy"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "FX Daily: Time to think about the midterms?",
+      "url": "https://think.ing.com/articles/fx-daily-time-to-think-about-the-midterms/",
+      "summary": "Fresh pressure on tech stocks drove safe-haven demand into Treasuries and weighed on the dollar, and ING sees precautionary unwinding of net-long dollar positions as the main risk into Tuesday's midterms, with a Democratic sweep around 68% in prediction markets read as mildly dollar-negative through shutdown and debt-ceiling gridlock. Thursday's US data leaned hawkish - 3Q growth 3.4% and September core PCE 0.3% MoM - and the FOMC blackout ends with Barkin (neutral), Daly (moderate dove) and Musalem (moderate hawk), though ING doubts they can add much with a December hike priced. Lagarde said a hike was discussed, gave no indication French bonds prompt a dovish rethink and officials are 'ready' to raise in December, leaving room for EUR/USD to re-test 1.120-1.1250; ING expects eurozone 3Q GDP at 0.3% QoQ but only 0% in France against 0.1% consensus, and a negative French print would widen spreads. The BoJ held at 1.25% and flagged its 2% target as met, with ING now looking for hikes in December and March/April and USD/JPY holding a 155-160 range.",
+      "story_ids": [
+        "usd-rates-ai",
+        "france-ecb"
+      ],
+      "id": "fx-daily-midterms"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Bank of Japan hits 2% price target",
+      "url": "https://think.ing.com/articles/bank-of-japan-2-price-target-hit/",
+      "summary": "The BoJ left the policy rate at 1.25% - back-to-back hikes would have upset markets - but said for the first time that underlying CPI is 'generally consistent' with the 2% target set in 2013, so the debate shifts to how fast it reaches a 1.75-2.00% neutral rate. Energy prices, AI demand and the weak yen were all named as upside inflation risks, growth forecasts were held around 0.7-0.8%, CPI forecasts were nudged higher and the BoJ acknowledged overseas rate rises, with an implicit fear that not matching December hikes from the Fed and ECB would leave the yen vulnerable. ING now expects 25bp hikes in December and March, a 1.75% policy rate ahead of April consumption support, and an acceleration of ETF sales from JPY330bn to JPY860bn a year from 2027. USD/JPY stays bid toward the top of 155-160 until a decisive turn lower in 2Q27, with a USD/KRW-style AI-driven upside surprise the one to watch in 2027.",
+      "story_ids": [
+        "usd-rates-ai"
+      ],
+      "id": "boj-2pct-target"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Rates Spark: Hikes coming, but bond yields choosing to fall",
+      "url": "https://think.ing.com/articles/rates-spark-hikes-coming-but-bond-yields-choosing-to-fall/",
+      "summary": "The US 10y made a decisive gap away from 5%, but to the downside, even though September core PCE rose to 3.1% - far from the 2% Warsh keeps restating - and income, spending and jobless claims all came in firm; the 7yr auction cleared with no tail and decent demand, and the move was more a back-end than front-end story. ING reads it as Treasuries staying responsive to AI-valuation sentiment and equity wobbles rather than fundamentals, calls it contrary to its preferred path back to higher yields but not enough to change its tune. On the ECB, a December hike looks near-certain with more than 20bp priced unless the Middle East improves or French bonds deteriorate, and a Reuters report that ECB staff see higher yields cutting 2027-28 growth by 100bp and inflation by 90bp supports ING's view that December could be the last hike of the cycle. Market pricing for further ECB tightening over 12 months has already fallen toward 65bp, driven mainly by French risk-off and more recently AI jitters, while Friday brings French, Spanish and German CPI plus eurozone 3Q GDP.",
+      "story_ids": [
+        "usd-rates-ai",
+        "france-ecb"
+      ],
+      "id": "rates-spark-hikes-yields-fall"
     }
   ],
   "stories": [
@@ -220,8 +262,8 @@
       "id": "france-ecb",
       "name": "French fiscal crisis and the ECB",
       "category": "Europe",
-      "updated": "2026-10-29",
-      "summary": "The ECB held on 29 Oct and kept a December hike in play, arguing that wider French spreads are already doing the tightening for it. Lagarde announced she steps down on 7 February 2027, so the support sequence (verbal softening, then a QT pause, then TPI) has to survive a leadership change, and TPI still cannot be justified while France is non-compliant with the fiscal rules. Eurozone sentiment slipped to 96.9 with price expectations rising, so there is no room to sound dovish. The April 2027 elections remain the cliff edge.",
+      "updated": "2026-10-30",
+      "summary": "The ECB held on 29 Oct and Lagarde confirmed a hike was discussed, saw no indication French bonds justify a dovish rethink and said officials are 'ready' to raise in December, with more than 20bp priced. ECB staff work estimating that higher yields cut 2027-28 growth by 100bp and inflation by 90bp keeps December as the likely last hike of the cycle. Her exit on 7 February 2027 brings the succession forward, with de Cos (dove) and Knot (hawk) the frontrunners and a dovish pick a euro negative. France is the immediate spread risk into Friday's flash CPI and 3Q GDP, where ING expects 0% growth against 0.1% consensus and a negative print would widen OAT-Bund, while Spain's 29 November election looks unlikely to change near-term momentum. The April 2027 French elections remain the cliff edge.",
       "pairs": [
         "EURUSD",
         "EURCHF",
@@ -241,13 +283,16 @@
         "ecb-holds-lagarde-out",
         "lagarde-december-hike",
         "ez-sentiment-oct",
-        "webinar-2027-rates"
+        "webinar-2027-rates",
+        "spain-election-economy",
+        "fx-daily-midterms",
+        "rates-spark-hikes-yields-fall"
       ],
       "scenarios": [
         {
           "name": "Contained, grinding stress",
           "type": "base",
-          "probability": 60,
+          "probability": 61,
           "description": "Spreads hold roughly 145-175bp after the Moody's relief, budget talks drag on and the ECB holds at 2.5% with a neutral message. No TPI.",
           "triggers": [
             "OAT-Bund spread",
@@ -270,13 +315,18 @@
               "date": "2026-10-29",
               "probability": 60,
               "note": "ECB held on 29 Oct and kept December alive; spreads remain the anchor, but Lagarde's exit on 7 Feb 2027 adds a succession overhang into the April 2027 election run-up. Cut 62 -> 60."
+            },
+            {
+              "date": "2026-10-30",
+              "probability": 61,
+              "note": "Raised 60 -> 61: Lagarde confirmed a hike was discussed, saw no reason for a dovish rethink on French bonds and said officials are 'ready' for December with 20bp+ priced, so the grind continues."
             }
           ]
         },
         {
           "name": "French relief",
           "type": "bull",
-          "probability": 12,
+          "probability": 11,
           "description": "Credible 2027 budget with real consolidation and calmer risk sentiment; spreads retrace.",
           "triggers": [
             "Budget adoption",
@@ -298,6 +348,11 @@
               "date": "2026-10-29",
               "probability": 12,
               "note": "Softened 13 -> 12: a French bond rally needs a credible 2027 budget, and the ECB just showed it will not pre-commit to support while yields do the tightening."
+            },
+            {
+              "date": "2026-10-30",
+              "probability": 11,
+              "note": "Cut 12 -> 11: ECB staff now estimate higher yields do much of the tightening (100bp of growth, 90bp of inflation in 2027-28), leaving less for a French budget-driven relief rally to deliver."
             }
           ]
         },
@@ -327,6 +382,11 @@
               "date": "2026-10-29",
               "probability": 22,
               "note": "Raised 20 -> 22: the ECB explicitly argued the bond market has taken over its job, and TPI/QT sequencing now has to survive a change of president."
+            },
+            {
+              "date": "2026-10-30",
+              "probability": 22,
+              "note": "Held at 22: ING expects 0% French 3Q GDP against 0.1% consensus and a negative print would widen OAT-Bund, but Spain's 29 November election looks unlikely to change near-term momentum."
             }
           ]
         },
@@ -355,6 +415,11 @@
               "date": "2026-10-29",
               "probability": 6,
               "note": "Raised 5 -> 6: leadership transition plus an unresolved budget and downside growth/upside inflation risks from Lagarde's own framing."
+            },
+            {
+              "date": "2026-10-30",
+              "probability": 6,
+              "note": "Held at 6: the succession (de Cos dove vs Knot hawk) and an unresolved budget stay tail risks, with no new trigger this batch."
             }
           ]
         }
@@ -500,8 +565,8 @@
       "id": "usd-rates-ai",
       "name": "US rates, Fed hike risk and AI-valuation wobble",
       "category": "US / Rates",
-      "updated": "2026-10-29",
-      "summary": "The Fed held at 3.75-4.00% on a 10-2 vote with two dissents for a hike, and Warsh kept December alive ('no ifs, ands or buts' on price stability); the 10y has validated its break back above 5% and ING still targets 5.25%. AI-valuation fear is fading as chip earnings land, handing the dollar back to the hawkish-rate story, with DXY pressing the year's highs where 102.50 opens 103.00. The RBNZ's dovish 4-3 hold (NZD -1.4%) and the BoC's 25bp hike to 2.50% show how much FX risk sits in central-bank surprises.",
+      "updated": "2026-10-30",
+      "summary": "The Fed held at 3.75-4.00% on a 10-2 vote and Warsh kept December alive, but the 10y has now gapped decisively away from 5% to the downside even with September core PCE at 3.1% and 3Q growth at 3.4% - Treasuries are trading on AI-valuation sentiment rather than data, and ING keeps its 5.25% target without changing its tune. A Democratic sweep is around 68% priced for the 3 November midterms, which ING reads as mildly dollar-negative and a reason not to chase USD upside after DXY pressed the year's highs where 102.50 opens 103.00. The BoJ held at 1.25% but declared its 2% target met, and ING now looks for hikes in December and March with USD/JPY bid in a 155-160 range until a 2Q27 turn lower.",
       "pairs": [
         "USDJPY",
         "USDCHF",
@@ -524,13 +589,16 @@
         "boc-hike-250",
         "rates-spark-gilts-warsh",
         "lagarde-december-hike",
-        "webinar-2027-rates"
+        "webinar-2027-rates",
+        "fx-daily-midterms",
+        "boj-2pct-target",
+        "rates-spark-hikes-yields-fall"
       ],
       "scenarios": [
         {
           "name": "Choppy around 5%, Dec hike alive",
           "type": "base",
-          "probability": 41,
+          "probability": 39,
           "description": "10y oscillates around 5%, USD consolidates if risk calms; JPY/CHF keep a haven bid on sell-offs.",
           "triggers": [
             "FOMC",
@@ -553,13 +621,18 @@
               "date": "2026-10-29",
               "probability": 41,
               "note": "Cut 43 -> 41: the 10y has already validated its move back above 5%, so the pure chop scenario gives up weight to the sustained-hawkish one."
+            },
+            {
+              "date": "2026-10-30",
+              "probability": 39,
+              "note": "Cut 41 -> 39: the 10y has decisively left 5% behind and is trading on AI sentiment rather than levels, so pure chop around 5% gives up weight."
             }
           ]
         },
         {
           "name": "Yields back above 5%, hawkish Fed",
           "type": "bull",
-          "probability": 34,
+          "probability": 32,
           "description": "Inflation, deficits and oil push yields up; December hike priced in; USD rebounds.",
           "triggers": [
             "Hot CPI",
@@ -582,13 +655,18 @@
               "date": "2026-10-29",
               "probability": 34,
               "note": "Raised 30 -> 34: the Fed held on a 10-2 vote with two hike dissents, Warsh kept December alive at 21bp priced, and ING maintains the 5.25% path."
+            },
+            {
+              "date": "2026-10-30",
+              "probability": 32,
+              "note": "Cut 34 -> 32: yields fell despite core PCE at 3.1% and firm activity data, and the 7yr auction cleared cleanly, so the path back above 5% needs a fresh catalyst even though ING keeps its 5.25% call."
             }
           ]
         },
         {
           "name": "AI-led risk-off and growth scare",
           "type": "bear",
-          "probability": 20,
+          "probability": 24,
           "description": "Equity sell-off deepens and data weaken; hike pricing collapses; yields fall sharply.",
           "triggers": [
             "Weak PMIs",
@@ -610,6 +688,11 @@
               "date": "2026-10-29",
               "probability": 20,
               "note": "Cut 22 -> 20: SK Hynix earnings and firmer Nasdaq futures are defusing the AI-credit fear that dominated last week."
+            },
+            {
+              "date": "2026-10-30",
+              "probability": 24,
+              "note": "Raised 20 -> 24: fresh tech pressure drove haven flows into Treasuries and ING warns against chasing USD upside into the midterms with a Democratic sweep ~68% priced."
             }
           ]
         },
@@ -638,6 +721,11 @@
               "date": "2026-10-29",
               "probability": 5,
               "note": "Unchanged at 5: repo liquidity is stable and no auction stress this week."
+            },
+            {
+              "date": "2026-10-30",
+              "probability": 5,
+              "note": "Unchanged at 5: the move was orderly, the 7yr auction had no tail and repo liquidity is stable."
             }
           ]
         }
@@ -708,6 +796,34 @@
     {
       "date": "2026-10-29",
       "text": "Still open: BoJ on 30 Oct, US midterms 3 November, ING 2027 rates webinar 4 November, and payrolls plus CPI before the 9 December FOMC. UK Autumn Budget gilt reaction also pending."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Rates Spark: the US 10y gapped decisively away from 5% to the downside even though September core PCE rose to 3.1% and income, spending and claims were firm; the 7yr auction cleared with no tail and the move was concentrated at the back end. ING keeps its 5.25% call. Hawkish-Fed scenario cut 34% -> 32%."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "AI sentiment is the marginal driver of Treasuries and the dollar again: fresh pressure on tech stocks brought haven flows, and a Democratic sweep is ~68% priced for the 3 November midterms, which ING reads as mildly dollar-negative and a reason not to chase USD upside. AI-led risk-off and growth scare raised 20% -> 24%, choppy base cut 41% -> 39% as the 10y left 5% behind."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "ECB: Lagarde confirmed a hike was discussed, gave no sign French bonds prompt a dovish rethink and officials are 'ready' to raise in December with 20bp+ priced; a Reuters report has ECB staff estimating higher yields cut 2027-28 growth by 100bp and inflation by 90bp, keeping December as the likely last hike of the cycle. Contained-grinding-stress raised 60% -> 61%, French relief cut 12% -> 11%."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "BoJ held at 1.25% but for the first time judged underlying CPI consistent with the 2% target, naming energy, AI demand and the weak yen as upside risks. ING now expects 25bp hikes in December and March, a 1.75% policy rate by April and ETF sales accelerated to JPY860bn a year from 2027, with USD/JPY bid in 155-160 until a 2Q27 turn lower."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Spain's 29 November election is a close race with the PP ahead and a PP-Vox majority possible; 3Q GDP grew 0.6% QoQ and 2.7% YoY but unemployment rose to 10.18% and harmonised inflation held at 4.9%, and ING sees little immediate macro impact. Filed under the france-ecb story as eurozone political risk; no probability change."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "No commodities paper in this batch, so oil-iran weights are unchanged: Brent near $114 and TTF above EUR100 still hold the premium, with renewed speculation about US strikes on Iran offset by looser product markets and the lifted Russian diesel ban."
+    },
+    {
+      "date": "2026-10-30",
+      "text": "Still open: US midterms 3 November, Spain's election 29 November, eurozone flash CPI and 3Q GDP (France 0% expected against 0.1% consensus, a negative print would widen spreads), ING's 2027 rates webinar 4 November, Lagarde's successor announcement (de Cos dove vs Knot hawk), BoJ hikes in December and March, and payrolls plus CPI before the 9 December FOMC."
     }
   ]
 }
