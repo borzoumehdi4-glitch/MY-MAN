@@ -84,11 +84,17 @@ class Account:
         """cushion / need.  >=2 comfortable, ~1 coin-flip, <1 lottery ticket."""
         return self.cushion / self.need if self.need else INF
 
-    def next_floor(self, peak: float) -> float:
-        """Monotone floor update after the equity high-water mark advances."""
+    def next_floor(self, peak: float, current_floor: float | None = None) -> float:
+        """Monotone floor update after the equity high-water mark advances.
+
+        `current_floor` defaults to the account's starting floor; pass the running
+        floor to get a guaranteed ratchet (the result can never be lower than it,
+        even if a stale/lower peak is passed in).
+        """
+        base = self.floor if current_floor is None else current_floor
         if self.dd_kind == "static":
-            return self.floor
-        return max(self.floor, min(self.floor_cap, peak - self.dd_amount))
+            return base
+        return max(base, min(self.floor_cap, peak - self.dd_amount))
 
 
 @dataclass
@@ -169,7 +175,7 @@ def simulate_account(
                 bal -= r
             bal -= fric * r
             peak = max(peak, bal)
-            floor = acct.next_floor(peak)
+            floor = acct.next_floor(peak, floor)
 
             if bal <= floor:  # account dead
                 busted += 1
@@ -317,7 +323,7 @@ def simulate_portfolio(
                 s["bal"] += rr * r if win else -r
                 s["bal"] -= fric * r
                 s["peak"] = max(s["peak"], s["bal"])
-                s["floor"] = a.next_floor(s["peak"])
+                s["floor"] = a.next_floor(s["peak"], s["floor"])
 
                 if s["bal"] <= s["floor"]:
                     s["alive"] = False
