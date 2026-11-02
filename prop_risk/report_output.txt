@@ -1,0 +1,199 @@
+edge assumed: 60% wins, 1.5R average winner, +0.480R per trade after friction, 4 trades/week
+implied edge: 100R per 52 weeks -- section 4 tests what happens when that is optimistic (it is)
+
+==============================================================================
+1. WHAT EACH ACCOUNT ACTUALLY IS  (the ratio decides everything)
+==============================================================================
+    account                                   bal   floor   need   cush     r  shots
+A1  PROP 2.5k phase-2 (static 12% DD)        2525    2200    100    325  3.25   81.2  OK
+A2  FUNDED 1k (1.5% DD, pay at +3%)          1000     985     30     15  0.50    3.8  LOTTERY
+A3  FUNDED 3k (6% trailing, locks at +6%)    3000    2820    180    180  1.00   36.0  MARGINAL
+
+  need  = USD of profit to the next payout / pass
+  cush  = USD of loss before the account is dead
+  r     = cush / need.  r>=2 comfortable | r~1 a coin flip | r<1 a lottery
+  shots = how many MINIMUM-SIZE trades fit in the cushion (0.01 lot).
+          This is the number that actually kills tight-DD accounts:
+          below ~6 shots the rules have decided, not your win rate.
+
+==============================================================================
+2. POSITION SIZING: what fraction of your remaining rope per trade?
+==============================================================================
+
+--- A1: PROP 2.5k phase-2 (static 12% DD)
+    need 100 | cushion 325 | min lot risk 4 (81.2 shots)
+  frac  risk$   eff$   %bal  R/tgt  P(ok)  P(dead)  pays 1st wks  value$
+  0.05   16.2  16.2   0.64    6.2   1.00     0.00  0.00     2.8    1081
+  0.10   32.5  32.5   1.29    3.1   1.00     0.00  0.00     1.5    1081
+  0.15   48.8  48.8   1.93    2.1   1.00     0.00  0.00     1.0    1081
+  0.20   65.0  65.0   2.57    1.5   1.00     0.00  0.00     0.8    1081
+  0.30   97.5  81.2   3.22    1.2   1.00     0.00  0.00     0.2    1081
+  0.50  162.5  81.2   3.22    1.2   1.00     0.00  0.00     0.2    1081
+  0.75  243.8  81.2   3.22    1.2   1.00     0.00  0.00     0.2    1081
+  1.00  325.0  81.2   3.22    1.2   1.00     0.00  0.00     0.2    1081
+
+--- A2: FUNDED 1k (1.5% DD, pay at +3%)
+    need 30 | cushion 15 | min lot risk 4 (3.8 shots)
+  frac  risk$   eff$   %bal  R/tgt  P(ok)  P(dead)  pays 1st wks  value$
+  0.05    0.8   4.0 *   0.40    7.5   0.77     0.98  3.35     3.0      88
+  0.10    1.5   4.0 *   0.40    7.5   0.77     0.98  3.35     3.0      88
+  0.15    2.2   4.0 *   0.40    7.5   0.77     0.98  3.35     3.0      88
+  0.20    3.0   4.0 *   0.40    7.5   0.77     0.98  3.35     3.0      88
+  0.30    4.5   4.0   0.40    7.5   0.77     0.98  3.35     3.0      88
+  0.50    7.5   4.0   0.40    7.5   0.77     0.98  3.35     3.0      88
+  0.75   11.2   4.0   0.40    7.5   0.77     0.98  3.35     3.0      88
+  1.00   15.0   4.0   0.40    7.5   0.77     0.98  3.35     3.0      88
+
+--- A3: FUNDED 3k (6% trailing, locks at +6%)
+    need 180 | cushion 180 | min lot risk 5 (36.0 shots)
+  frac  risk$   eff$   %bal  R/tgt  P(ok)  P(dead)  pays 1st wks  value$
+  0.05    9.0   9.0   0.30   20.0   1.00     0.02  6.20     9.8     625
+  0.10   18.0  18.0   0.60   10.0   1.00     0.11 10.59     4.8    1122
+  0.15   27.0  27.0   0.90    6.7   1.00     0.14 11.79     3.0    1307
+  0.20   36.0  36.0   1.20    5.0   1.00     0.15 11.68     2.2    1388
+  0.30   54.0  45.0   1.50    4.0   1.00     0.14 11.47     2.2    1422
+  0.50   90.0  45.0   1.50    4.0   1.00     0.14 11.47     2.2    1422
+  0.75  135.0  45.0   1.50    4.0   1.00     0.14 11.47     2.2    1422
+  1.00  180.0  45.0   1.50    4.0   1.00     0.14 11.47     2.2    1422
+
+  frac = risk / remaining cushion | eff$ = risk after the min-lot clamp
+  P(ok)= pass (A1) or first payout (A2/A3) | value$ = cash over 52 weeks,
+         with an A1 pass credited at its funded-account value
+  ' *' = the minimum lot is bigger than the requested risk, so that row
+        is not actually available to you -- the account cannot be sized down
+    A1 best: frac 0.05 -> risk 16.2 USD (0.64% of balance, 6.2R to target), P(ok) 1.00, P(dead) 0.00, value 1081 USD/yr
+    A2 best: frac 0.05 -> risk 4.0 USD (0.40% of balance, 7.5R to target), P(ok) 0.77, P(dead) 0.98, value 88 USD/yr
+    A3 best: frac 0.30 -> risk 45.0 USD (1.50% of balance, 4.0R to target), P(ok) 1.00, P(dead) 0.14, value 1422 USD/yr
+
+==============================================================================
+3. THE RULES I GUESSED -- and the two that decide A2's fate
+==============================================================================
+
+  A2, 1.5% drawdown: does a payout re-base the trail?
+  (i.e. after you take 30 USD at 1030, is your floor 985 again, or
+   does it stay at the 1015 high-water mark?)
+                           variant  risk$  P(pay)   pays   cash$  P(dead)
+            trail, payout re-bases    4.0    0.77   3.35      88     0.98
+     trail, floor never moves down    4.0    0.77   1.47      17     1.00
+       static floor 985 (no trail)    4.0    0.93   8.18     214     0.59
+    trail, re-bases, no de-risking   12.0    0.63   1.73      53     1.00
+  Under the strict reading (floor never moves down) you can never take
+  the full 30: at 1030 you are only 15 above the floor, so the payout
+  you can actually book is ~15, and then you are at the wall.
+
+  A3 after the lock at 3000: what do you leave in the account?
+    withdraw down to  buffer    cash$  P(dead)
+                3000       0      266     0.99
+                3030      30      989     0.30
+                3060      60     1307     0.14
+                3120     120     1695     0.06
+
+  -> withdrawing down to the locked floor leaves 0 cushion: the next
+     loser kills an account that is already paid for and already won.
+     Always leave a buffer above a locked floor.
+
+  THE MOST IMPORTANT POLICY: shrink risk as the cushion shrinks
+  (risk = min(size, cushion/guard); guard=4 means one loss can never
+   cost more than a quarter of what you have left)
+                            guard  A1 P(ok)  A2 P(ok)  A3 P(ok)  A2 P(dead)
+                             none      0.95      0.76      0.86        0.99
+                                1      0.93      0.76      0.82        0.99
+                                2      0.98      0.76      0.94        0.99
+                                4      1.00      0.77      1.00        0.98
+                                6      1.00      0.77      1.00        0.98
+  A1 and A3 gain real pass-probability from de-risking. A2 does not
+  move at all: its cushion (15) is smaller than 4x a minimum lot (16),
+  so there is no size small enough to make it safe. That is a rule
+  problem, not a discipline problem.
+
+==============================================================================
+4. THE R:R YOU DID NOT TELL ME  (60% win rate is not an edge by itself)
+==============================================================================
+   R:R   E/trade   P(success) at risk = 15% of cushion
+   0.8     0.060   A1 0.87   A2 0.29   A3 0.63
+   1.0     0.180   A1 0.98   A2 0.51   A3 0.93
+   1.2     0.300   A1 1.00   A2 0.64   A3 0.99
+   1.5     0.480   A1 1.00   A2 0.77   A3 1.00
+   2.0     0.780   A1 1.00   A2 0.85   A3 1.00
+   3.0     1.380   A1 1.00   A2 0.91   A3 1.00
+
+  Break-even win rate = (1 + friction) / (1 + R:R):
+    at 1.0R you need > 51.0% wins. You have 60%.
+    at 1.5R you need > 40.8% wins. You have 60%.
+    at 2.0R you need > 34.0% wins. You have 60%.
+    at 3.0R you need > 25.5% wins. You have 60%.
+
+  Read the 1.0R row: at 60% wins and 1.0R the edge is thin and the
+  tight accounts flip to coin flips. Your real R:R is the single
+  input that decides whether this portfolio is a business or a bet --
+  measure it from your last 50 closed trades, not from memory.
+
+  What the plan looks like at a REALISTIC live edge
+  (208 trades/yr, risk = 15% of cushion; rho=0.85, all three at once):
+  E/trade  R per yr   A1:P(ok)   A2:P(ok)   A3:P(ok)   E[cash]/yr
+    0.480       100    1.00    0.77    1.00     1395
+    0.256        53    0.99    0.56    0.97      595
+    0.180        37    0.98    0.51    0.93      409
+    0.080        17    0.87    0.32    0.67      157
+    0.025         5    0.78    0.22    0.47       84
+
+  The message that does not change across the whole row: A1 keeps
+  converting (its cushion is 3x its target) while A2's odds collapse
+  first. Order your attention by cushion/need, not by account size.
+
+==============================================================================
+5. SEQUENCING: one account at a time vs all three at once
+==============================================================================
+  risk budget used: A1 49  A2 4  A3 27 USD per trade (1.93%, 0.40%, 0.90% of balance)
+  horizon 52 weeks.  'cash' = USD actually withdrawn, 80% split.
+  A1 passing is scored as a conversion, not as cash.
+
+policy                          rho    mean     p10     med  P(any)  P(2+dead) P(all dead)  alive
+  (a passed A1 is credited 1081 USD = the 12-month cash value of the 2.5k funded account it becomes)
+all three, same signal         0.85    2412    1856    2448    1.00       0.14        0.00   0.86
+all three, independent         0.00    2413    1866    2442    1.00       0.14        0.00   0.86
+all three, risk halved         0.85    2022    1723    2037    1.00       0.08        0.00   0.92
+one at a time (A1->A3->A2)     0.00    2296    1775    2330    1.00       0.13        0.00   0.87
+A1 only (press the cushion)    0.00    1081    1081    1081    1.00       0.00        0.00   0.00
+A3 only (largest payout)       0.00    1309     761    1344    1.00       0.00        0.14   0.86
+A2 only (fastest payout)       0.00      20       0      25    0.78       0.00        1.00   0.00
+
+  Two honest readings of this table:
+  1. rho barely moves any number, and that is the lesson. Correlation
+     does NOT change your expected yearly cash (E[sum] = sum of E[.]);
+     it changes the shape of the path. Copying one idea into three
+     accounts is ONE position sized 3x, so the size gets decided once,
+     on the idea -- not three times, once per account.
+  2. Sequencing, one-at-a-time vs parallel, is worth about 5%. Where you
+     put your risk is worth 60x (A2 20 USD/yr vs A3 1294 USD/yr). Spend
+     your decision-making on sizing, not on juggling terminals.
+
+==============================================================================
+6. DOES CROSS-ACCOUNT HEDGING CREATE MONEY?
+==============================================================================
+  Opposite legs, same size, in two accounts. The P&L's are mirror
+  images, so the losing leg dying is the winning leg's profit.
+pair                                sigma net (closed at limit) net (firm eats the gap)
+A3 (180) short A3 (180)                50                  -2.0                    -2.0
+A3 (180) short A3 (180)               180                  -2.0                    27.6
+A3 (180) short A3 (180)               600                  -2.0                   316.3
+A3 (180) short A2 (15)                 50                  -2.0                    11.4
+A3 (180) short A2 (15)                180                  -2.0                    77.7
+A3 (180) short A2 (15)                600                  -2.0                   389.0
+A2 (15) short A2 (15)                  50                  -2.0                    24.5
+A2 (15) short A2 (15)                 180                  -2.0                   126.5
+A2 (15) short A2 (15)                 600                  -2.0                   459.8
+
+  Column 1 is what you actually get: zero, minus two spreads. Column 2
+  only turns positive if a move jumps THROUGH the losing account's
+  drawdown limit and the firm eats the overshoot. That is not an edge,
+  it is a short-gap bet with two extra spreads -- and it is the exact
+  pattern ('simultaneous opposite positions across accounts') that most
+  firms void payouts for. Read your T&C before you even think about it.
+
+  The transfer is real but it is not free: you convert two live, paying
+  accounts into one account worth the same, minus costs, minus an
+  account's remaining optionality. Hedging moves risk, it never deletes
+  it, and it is only 'smart' when the sacrificed account is already dead
+  anyway -- which is the same as saying: cut size on the one you were
+  protecting, and keep the other.
