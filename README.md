@@ -111,10 +111,17 @@ For each one: `python3 feed.py --text <url>`, rewrite `summary` in the house sty
 
 ## Publishing and activation
 
-GitHub Pages will serve the dashboard at `https://borzoumehdi4-glitch.github.io/MY-MAN/`.
+GitHub Pages serves the dashboard at `https://borzoumehdi4-glitch.github.io/MY-MAN/` (verified
+live: HTTP 200, current papers and probabilities).
 Only `dashboard.html` (as `index.html`) is published; the store, tests and seed scripts stay in
 the repository. There is nothing secret to leak: `feed.py` needs no API key, the workflow uses the
 built-in `GITHUB_TOKEN`, and a scan of all tracked files found no keys, tokens, emails or paths.
+
+Current layout: the workflow file lives at `.github/workflows/daily.yml` **on the default branch**
+(that is the only place a `cron` schedule is read from), while `ops/daily.yml` on `cline/ad1ddtx1`
+is the canonical copy - if you edit one, copy it to the other. All data commits go to
+`WORK_BRANCH` (`cline/ad1ddtx1`) no matter which branch the workflow runs from, so the default
+branch never grows a second, stale copy of `data/state.json`.
 
 The canonical workflow file is `ops/daily.yml`. It has to live at `.github/workflows/daily.yml` to
 run, but the automation token used to build this repo cannot create files in `.github/workflows/`
