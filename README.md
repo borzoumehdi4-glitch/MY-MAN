@@ -109,21 +109,35 @@ python3 -c "import store; [print(p['id'], p['date'], p['url']) for p in store.lo
 For each one: `python3 feed.py --text <url>`, rewrite `summary` in the house style, set
 `story_ids`, then move probabilities with `store.set_probability(...)` and add changelog lines.
 
-## Publishing
+## Publishing and activation
 
-GitHub Pages serves the dashboard at `https://borzoumehdi4-glitch.github.io/MY-MAN/`.
-Only `dashboard.html` (as `index.html`) is published; the store, the tests and the seed
-scripts stay in the repository. No secrets live in this repo - there is nothing to leak:
-`feed.py` needs no API key, and the workflow authenticates with the built-in `GITHUB_TOKEN`.
+GitHub Pages will serve the dashboard at `https://borzoumehdi4-glitch.github.io/MY-MAN/`.
+Only `dashboard.html` (as `index.html`) is published; the store, tests and seed scripts stay in
+the repository. There is nothing secret to leak: `feed.py` needs no API key, the workflow uses the
+built-in `GITHUB_TOKEN`, and a scan of all tracked files found no keys, tokens, emails or paths.
 
-Required repository configuration:
+The canonical workflow file is `ops/daily.yml`. It has to live at `.github/workflows/daily.yml` to
+run, but the automation token used to build this repo cannot create files in `.github/workflows/`
+(it requires the GitHub App `workflows` permission). One-time activation, from your own account:
 
-- **Settings -> Actions -> General -> Workflow permissions**: "Read and write" (the job pushes a
-  commit). The workflow also declares `permissions: contents: write, pages: write, id-token: write`.
-- **Settings -> Pages -> Source**: "GitHub Actions" (`configure-pages` tries to enable this itself).
-- **The schedule only fires from the default branch.** GitHub runs `cron` workflows using the copy
-  on the default branch, so this workflow must be merged into it (a manual `workflow_dispatch` run
-  works from any branch).
+```bash
+cd MY-MAN && git pull origin cline/ad1ddtx1
+mkdir -p .github/workflows && cp ops/daily.yml .github/workflows/daily.yml
+git add .github/workflows/daily.yml && git commit -m "Add daily dashboard workflow"
+git push origin cline/ad1ddtx1
+```
+
+Then, in the repository settings:
+
+- **Settings -> Pages -> Build and deployment -> Source**: "GitHub Actions" (the workflow's
+  `configure-pages` step also tries to enable it on first run).
+- **Settings -> General -> Default branch**: set to `cline/ad1ddtx1`, or merge this branch into the
+  current default. GitHub only fires `cron` schedules from the default branch, so without this the
+  daily run never starts (`workflow_dispatch` still works from any branch).
+- **Settings -> Actions -> General -> Workflow permissions**: "Read and write", so the job may push.
+
+All commits always go to `WORK_BRANCH` (`cline/ad1ddtx1`) regardless of which branch the workflow
+runs on, so the default branch can never accumulate a second, divergent copy of the data.
 
 ## Scheduling
 

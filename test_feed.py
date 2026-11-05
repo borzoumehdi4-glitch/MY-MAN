@@ -262,6 +262,19 @@ def test_unique_id_avoids_collisions():
     assert ingest.unique_id("abc", {"abc", "abc-2"}) == "abc-3"
 
 
+def test_ingest_is_idempotent():
+    import copy
+    import ingest
+
+    state = copy.deepcopy(INGEST_STATE)
+    first = _with_fake_feed(SEED_ITEMS, lambda: ingest.ingest(state))
+    second = _with_fake_feed(SEED_ITEMS, lambda: ingest.ingest(state))
+    assert first == ["new-one", "new-two"], first
+    assert second == [], second  # the same feed content must add nothing the second time
+    urls = [p["url"] for p in state["papers"]]
+    assert len(urls) == len(set(urls)), urls
+
+
 def main():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_") and callable(v)]
     for test in tests:

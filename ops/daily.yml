@@ -20,6 +20,12 @@ permissions:
   pages: write # publish the dashboard
   id-token: write # required by actions/deploy-pages
 
+env:
+  # Single branch of record. The cron has to be defined on the default branch to
+  # fire, but every commit goes here, so the default branch can never drift into a
+  # second, divergent copy of the data.
+  WORK_BRANCH: cline/ad1ddtx1
+
 concurrency:
   group: daily-dashboard
   cancel-in-progress: false
@@ -32,6 +38,9 @@ jobs:
       added: ${{ steps.ingest.outputs.added }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.WORK_BRANCH }}
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -66,7 +75,7 @@ jobs:
             echo "Nothing new - no commit"
           else
             git commit -m "Auto-ingest $(date -u +%F): ${{ steps.ingest.outputs.added }} paper(s), mechanical summaries"
-            git push origin "HEAD:${GITHUB_REF_NAME}"
+            git push origin "HEAD:${WORK_BRANCH}"
           fi
 
       - name: Stage the site
