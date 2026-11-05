@@ -84,7 +84,7 @@ or urls.
 **1. GitHub Actions (`.github/workflows/daily.yml`) - deterministic, daily 07:00 UTC, plus manual `workflow_dispatch`.**
 Runs on GitHub's runners, so it does not need your computer or any sandbox:
 
-1. `test_feed.py` (parser, dedupe and ingest guards - must print `14 tests passed`)
+1. `test_feed.py` (parser, dedupe and ingest guards - must print `15 tests passed`)
 2. `ingest.py` - appends missing papers with **mechanical summaries labelled `[auto]`**. It
    never moves scenario probabilities and never sets `story_ids`; those are analyst decisions.
 3. `build.py` - rebuilds `dashboard.html`
