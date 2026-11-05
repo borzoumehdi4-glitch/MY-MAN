@@ -188,6 +188,80 @@ def test_validate_catches_duplicate_papers():
     assert any("duplicate paper url" in p for p in problems), problems
 
 
+SEED_ITEMS = [
+    {"url": "https://think.ing.com/articles/known/", "title": "Known", "date": "2026-11-04",
+     "sections": ["fx"], "kind": "article", "teaser": "already stored"},
+    {"url": "https://think.ing.com/articles/below-floor/", "title": "Too old", "date": "2026-10-20",
+     "sections": ["fx"], "kind": "article", "teaser": "before the floor"},
+    {"url": "https://think.ing.com/articles/new-one/", "title": "New one", "date": "2026-11-04",
+     "sections": ["fx"], "kind": "article", "teaser": "fresh teaser"},
+    {"url": "https://think.ing.com/articles/new-two/", "title": "New two", "date": "2026-11-05",
+     "sections": ["rates"], "kind": "snap", "teaser": "another fresh teaser"},
+]
+
+INGEST_STATE = {
+    "papers": [{"id": "known", "url": "https://think.ing.com/articles/known/", "date": "2026-11-04"}],
+    "stories": [{"id": "s", "scenarios": [{"name": "a", "probability": 60, "history": []}]}],
+    "changelog": [],
+}
+
+
+def _with_fake_feed(items, fn):
+    original = feed.collect
+    feed.collect = lambda macro=False: items
+    try:
+        return fn()
+    finally:
+        feed.collect = original
+
+
+def test_ingest_applies_floor_and_skips_known_urls():
+    import ingest
+
+    found = _with_fake_feed(SEED_ITEMS, lambda: ingest.candidates(INGEST_STATE))
+    urls = [c["url"] for c in found]
+    assert urls == [
+        "https://think.ing.com/articles/new-one/",
+        "https://think.ing.com/articles/new-two/",
+    ], urls
+
+
+def test_ingest_labels_summary_and_never_touches_probabilities():
+    import copy
+    import ingest
+
+    state = copy.deepcopy(INGEST_STATE)
+    added = _with_fake_feed(SEED_ITEMS, lambda: ingest.ingest(state))
+    assert added == ["new-one", "new-two"], added
+    for paper in state["papers"][1:]:
+        assert paper["summary"].startswith("[auto] Mechanical summary"), paper["summary"]
+        assert paper["story_ids"] == [], "ingest must not decide story links"
+    assert state["stories"][0]["scenarios"][0]["probability"] == 60
+    assert state["stories"][0]["scenarios"][0]["history"] == []
+    assert len(state["changelog"]) == 1 and "Auto-ingest" in state["changelog"][0]["text"]
+
+
+def test_ingest_cap_takes_oldest_first_so_nothing_starves():
+    import ingest
+
+    items = [
+        {"url": "https://think.ing.com/articles/d{}a/".format(d), "title": "t{}".format(d),
+         "date": "2026-11-{:02d}".format(d), "sections": ["fx"], "kind": "article", "teaser": "x"}
+        for d in (20, 11, 15, 12, 19)
+    ]
+    state = {"papers": [], "stories": [], "changelog": []}
+    added = _with_fake_feed(items, lambda: ingest.ingest(state, limit=3))
+    assert added == ["d11a", "d12a", "d15a"], added
+
+
+def test_unique_id_avoids_collisions():
+    import ingest
+
+    assert ingest.unique_id("abc", set()) == "abc"
+    assert ingest.unique_id("abc", {"abc"}) == "abc-2"
+    assert ingest.unique_id("abc", {"abc", "abc-2"}) == "abc-3"
+
+
 def main():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_") and callable(v)]
     for test in tests:

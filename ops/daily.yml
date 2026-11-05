@@ -1,0 +1,105 @@
+# CANONICAL COPY OF .github/workflows/daily.yml
+# It lives here because the automation token cannot create files under
+# .github/workflows/ (needs the GitHub App 'workflows' permission).
+# To activate: copy this file to .github/workflows/daily.yml and commit it
+# from an account/app that has the workflows permission, then enable Pages.
+
+name: Daily dashboard (mechanical ingest + Pages)
+
+# 07:00 UTC every day, plus a manual trigger from the Actions tab or `gh workflow run`.
+# This job is deterministic: it collects papers and rebuilds the page. It does NOT
+# write analysis and does NOT move scenario probabilities - that stays with Cline.
+
+on:
+  schedule:
+    - cron: "0 7 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write # commit data/state.json + dashboard.html back to the branch
+  pages: write # publish the dashboard
+  id-token: write # required by actions/deploy-pages
+
+concurrency:
+  group: daily-dashboard
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    name: Ingest papers and rebuild
+    runs-on: ubuntu-latest
+    outputs:
+      added: ${{ steps.ingest.outputs.added }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Offline tests (parser, dedupe, ingest guards)
+        run: python3 test_feed.py
+
+      - name: Ingest new papers (mechanical summaries only)
+        id: ingest
+        run: python3 ingest.py
+
+      - name: Rebuild dashboard
+        run: python3 build.py
+
+      - name: Verify state (probabilities sum to 100, no duplicates)
+        run: |
+          python3 - <<'PY'
+          import store
+          problems = store.validate(store.load())
+          print(problems or "valid")
+          raise SystemExit(1 if problems else 0)
+          PY
+
+      - name: Commit and push if the data changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/state.json dashboard.html
+          if git diff --cached --quiet; then
+            echo "Nothing new - no commit"
+          else
+            git commit -m "Auto-ingest $(date -u +%F): ${{ steps.ingest.outputs.added }} paper(s), mechanical summaries"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Stage the site
+        run: |
+          mkdir -p _site
+          cp dashboard.html _site/index.html
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: _site
+          retention-days: 1
+
+  deploy:
+    name: Publish to GitHub Pages
+    needs: ingest
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: _site
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true # creates the Pages site if it is not enabled yet
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

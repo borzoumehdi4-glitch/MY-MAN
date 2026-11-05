@@ -79,6 +79,52 @@ or urls.
 - Most RSS items ship with an empty `<date>`; `feed.py` falls back to the
   article's `date_published` meta tag so `--since` does not silently drop them.
 
+## Automation: two separate processes
+
+**1. GitHub Actions (`.github/workflows/daily.yml`) - deterministic, daily 07:00 UTC, plus manual `workflow_dispatch`.**
+Runs on GitHub's runners, so it does not need your computer or any sandbox:
+
+1. `test_feed.py` (parser, dedupe and ingest guards - must print `14 tests passed`)
+2. `ingest.py` - appends missing papers with **mechanical summaries labelled `[auto]`**. It
+   never moves scenario probabilities and never sets `story_ids`; those are analyst decisions.
+3. `build.py` - rebuilds `dashboard.html`
+4. `store.validate()` - aborts the run if probabilities stop summing to 100 or a duplicate appears
+5. commits `data/state.json` + `dashboard.html` to the branch it runs on
+6. publishes `dashboard.html` to **GitHub Pages** as `index.html`
+
+`ingest.py` uses the fixed floor `FLOOR = 2026-10-29`, caps at `MAX_PER_RUN = 12` and sorts
+**oldest first**, so a burst of publications can never starve an older paper - the backlog
+before 2026-10-29 is never touched.
+
+**2. Cline scheduled agent - the analytical pass, whenever a sandbox is available.**
+Summarising judgement, linking papers to stories and moving probabilities needs an LLM, so it
+stays a separate process. It upgrades the `[auto]` papers and leaves everything else alone.
+
+To see what is waiting for analysis:
+
+```bash
+python3 -c "import store; [print(p['id'], p['date'], p['url']) for p in store.load()['papers'] if p['summary'].startswith('[auto]')]"
+```
+
+For each one: `python3 feed.py --text <url>`, rewrite `summary` in the house style, set
+`story_ids`, then move probabilities with `store.set_probability(...)` and add changelog lines.
+
+## Publishing
+
+GitHub Pages serves the dashboard at `https://borzoumehdi4-glitch.github.io/MY-MAN/`.
+Only `dashboard.html` (as `index.html`) is published; the store, the tests and the seed
+scripts stay in the repository. No secrets live in this repo - there is nothing to leak:
+`feed.py` needs no API key, and the workflow authenticates with the built-in `GITHUB_TOKEN`.
+
+Required repository configuration:
+
+- **Settings -> Actions -> General -> Workflow permissions**: "Read and write" (the job pushes a
+  commit). The workflow also declares `permissions: contents: write, pages: write, id-token: write`.
+- **Settings -> Pages -> Source**: "GitHub Actions" (`configure-pages` tries to enable this itself).
+- **The schedule only fires from the default branch.** GitHub runs `cron` workflows using the copy
+  on the default branch, so this workflow must be merged into it (a manual `workflow_dispatch` run
+  works from any branch).
+
 ## Scheduling
 
 One scheduled agent run per day. It works from a fresh clone, so the repo is the

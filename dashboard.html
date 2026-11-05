@@ -64,7 +64,7 @@ function stories(){
 function papers(){return S.papers.length?[...S.papers].sort((a,b)=>b.date.localeCompare(a.date)).map(p=>`<details><summary>${esc(p.date)} – ${esc(p.title)}</summary><p>${esc(p.summary)}</p>${p.url?`<p><a href="${esc(p.url)}" target="_blank" rel="noopener">Source</a></p>`:''}<div class="mut">Stories: ${(p.story_ids||[]).map(esc).join(', ')}</div></details>`).join(''):'<div class="empty">No papers yet.</div>'}
 function changes(){return S.changelog.length?[...S.changelog].sort((a,b)=>b.date.localeCompare(a.date)).map(c=>`<div class="log"><b>${esc(c.date)}</b> – ${esc(c.text)}</div>`).join(''):'<div class="empty">No changes logged yet.</div>'}
 function render(){
- document.getElementById('meta').textContent=`${S.papers.length} papers · ${S.stories.length} stories`;
+ document.getElementById('meta').textContent=`${S.papers.length} papers · ${S.stories.length} stories · data through ${(S.papers.map(p=>p.date).sort().pop())||'-'}`;
  const V={stories:'Stories & scenarios',papers:'Papers',changes:'What changed'};
  document.getElementById('nav').innerHTML=Object.entries(V).map(([k,v])=>`<button class="${k===view?'on':''}" onclick="view='${k}';render()">${v}</button>`).join('');
  document.getElementById('main').innerHTML={stories,papers,changes}[view]()}
