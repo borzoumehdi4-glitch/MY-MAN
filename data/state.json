@@ -462,6 +462,22 @@
         "france-ecb"
       ],
       "id": "fx-daily-democratic-sweep"
+    },
+    {
+      "id": "czech-national-bank-review-the-new-neutral-norma",
+      "date": "2026-11-05",
+      "title": "Czech National Bank review: The new neutral normal",
+      "url": "https://think.ing.com/articles/czech-national-bank-review-the-new-neutral-normal/",
+      "summary": "[auto] Mechanical summary (not analysed): Punchier inflation amid mediocre economic performance The CNB proceeded with a rate hike on Thursday, raising the base rate to 4%, which matches the expectations of market participants. The decision was taken in a split vote as four board members favoured a tighter monetary policy setup, while three policymakers opted for rate stability. [article, fx]",
+      "story_ids": []
+    },
+    {
+      "id": "rates-spark-treasury-heat-from-tech-flight-but-f",
+      "date": "2026-11-05",
+      "title": "Rates Spark: Treasury heat from tech flight - but for how long?",
+      "url": "https://think.ing.com/articles/rates-spark-treasury-heat-from-tech-flight-but-for-how-long/",
+      "summary": "[auto] Mechanical summary (not analysed): A creeping move lower in equities would eventually be ignored by Treasuries. But a large dump in equities would not The US 10yr yield is now down some 50bp from its recent highs. The drivers have been real money value hunters (mostly domestic, but also including international players), some fast money longs in Treasuries versus payers in SOFR in a short swap spread trade, and... [article, rates]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1235,6 +1251,10 @@
     {
       "date": "2026-11-03",
       "text": "Backfill: the 3 November FX Daily and Commodities Feed were skipped by the 12-item cap on the 5 November run, then stranded because that run used the newest stored date as its --since floor. Added for completeness without moving probabilities, which already reflect the 4-5 November papers. The scheduler floor is now fixed at 2026-10-29 so this cannot recur."
+    },
+    {
+      "date": "2026-11-05",
+      "text": "Auto-ingest (GitHub Actions): 2 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
 }
