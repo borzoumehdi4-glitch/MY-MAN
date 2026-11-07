@@ -478,6 +478,14 @@
       "url": "https://think.ing.com/articles/rates-spark-treasury-heat-from-tech-flight-but-for-how-long/",
       "summary": "[auto] Mechanical summary (not analysed): A creeping move lower in equities would eventually be ignored by Treasuries. But a large dump in equities would not The US 10yr yield is now down some 50bp from its recent highs. The drivers have been real money value hunters (mostly domestic, but also including international players), some fast money longs in Treasuries versus payers in SOFR in a short swap spread trade, and... [article, rates]",
       "story_ids": []
+    },
+    {
+      "id": "fx-daily-tech-collapses-fx-shrugs",
+      "date": "2026-11-06",
+      "title": "FX Daily: Tech collapses, FX shrugs",
+      "url": "https://think.ing.com/articles/fx-daily-tech-collapses-fx-shrugs/",
+      "summary": "[auto] Mechanical summary (not analysed): USD: Payrolls can provide the dollar some support We have all seen big falls in tech stocks on the back of the threat to data centres. The fact that the equity sell-off spread to the defensive sectors of consumer staples, utilities and healthcare serves as a warning that an asset management industry underweight in cash may be tidying up positions into year-end. [article, fx]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1255,6 +1263,10 @@
     {
       "date": "2026-11-05",
       "text": "Auto-ingest (GitHub Actions): 2 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-06",
+      "text": "Auto-ingest (GitHub Actions): 1 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
 }
