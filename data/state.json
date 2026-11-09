@@ -486,6 +486,14 @@
       "url": "https://think.ing.com/articles/fx-daily-tech-collapses-fx-shrugs/",
       "summary": "[auto] Mechanical summary (not analysed): USD: Payrolls can provide the dollar some support We have all seen big falls in tech stocks on the back of the threat to data centres. The fact that the equity sell-off spread to the defensive sectors of consumer staples, utilities and healthcare serves as a warning that an asset management industry underweight in cash may be tidying up positions into year-end. [article, fx]",
       "story_ids": []
+    },
+    {
+      "id": "fx-daily-dollar-rally-needs-more-risk-off-fuel",
+      "date": "2026-11-09",
+      "title": "FX Daily: Dollar rally needs more risk-off fuel",
+      "url": "https://think.ing.com/articles/fx-daily-dollar-rally-needs-more-risk-off-fuel/",
+      "summary": "[auto] Mechanical summary (not analysed): USD: At risk of correction The dollar has emerged stronger after markets digested last Thursday's big tech-led equity selloff. The greenback was already gaining ground across the board even before US payrolls (165k) smashed expectations on Friday afternoon. [article, fx]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1266,6 +1274,10 @@
     },
     {
       "date": "2026-11-06",
+      "text": "Auto-ingest (GitHub Actions): 1 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-09",
       "text": "Auto-ingest (GitHub Actions): 1 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
