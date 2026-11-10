@@ -484,32 +484,43 @@
       "date": "2026-11-06",
       "title": "FX Daily: Tech collapses, FX shrugs",
       "url": "https://think.ing.com/articles/fx-daily-tech-collapses-fx-shrugs/",
-      "summary": "[auto] Mechanical summary (not analysed): USD: Payrolls can provide the dollar some support We have all seen big falls in tech stocks on the back of the threat to data centres. The fact that the equity sell-off spread to the defensive sectors of consumer staples, utilities and healthcare serves as a warning that an asset management industry underweight in cash may be tidying up positions into year-end. [article, fx]",
-      "story_ids": []
+      "summary": "Tech stocks fell heavily on data-centre concerns, but FX markets shrugged it off with only muted moves. JPY and CHF gained as safe havens while AUD/NZD underperformed. US short-dated rates fell ~50bp since late September, softening the dollar's yield advantage. The October jobs report (whisper +82k vs +29k prior) will confirm whether the Fed's 'solid' jobs assessment holds, potentially supporting short-dated rates and the dollar. DXY remains resilient at 101.50-102.50. EUR/USD consolidates near 1.12 with ECB December hike priced at 18bp. Banxico cut rates 3-2 to 6.25%, narrowing the Banxico-Fed spread to 225bp.",
+      "story_ids": [
+        "usd-rates-ai"
+      ]
     },
     {
       "id": "fx-daily-dollar-rally-needs-more-risk-off-fuel",
       "date": "2026-11-09",
       "title": "FX Daily: Dollar rally needs more risk-off fuel",
       "url": "https://think.ing.com/articles/fx-daily-dollar-rally-needs-more-risk-off-fuel/",
-      "summary": "[auto] Mechanical summary (not analysed): USD: At risk of correction The dollar has emerged stronger after markets digested last Thursday's big tech-led equity selloff. The greenback was already gaining ground across the board even before US payrolls (165k) smashed expectations on Friday afternoon. [article, fx]",
-      "story_ids": []
+      "summary": "Dollar rallied after strong payrolls (165k) and the tech selloff, but the move may be stretched and requires persistent risk-off to avoid correction. October CPI expected at 0.3% MoM headline and core, supporting December Fed hike expectations (19bp priced). Brent stabilized below $100/bl. Gadi Eisenkot given mandate to form Israeli government, seen as more diplomatic on Iran. EUR/USD undervalued 2.1-2.3%, expected back above 1.120. ECB succession race between de Cos (dove) and Knot (hawk) should have contained impact. BoE expected to hike again in February; EUR/GBP seen returning to 0.840.",
+      "story_ids": [
+        "usd-rates-ai",
+        "oil-iran",
+        "france-ecb"
+      ]
     },
     {
       "id": "eurozone-housing-market-in-2027-recovery-relapse",
       "date": "2026-11-10",
       "title": "Eurozone housing market in 2027: recovery, relapse or revolution?",
       "url": "https://think.ing.com/articles/eurozone-housing-market-in-2027-recovery-relapse-or-revolution/",
-      "summary": "[auto] Mechanical summary (not analysed): A eurozone housing market recovery may be on the cards for 2027, but there is more than one way the story could unfold. Affordability, interest rates and the political response to Europe’s housing crisis set the scene for three very different scenarios [article, macro]",
-      "story_ids": []
+      "summary": "Eurozone housing market recovering in 2027 but affordability remains a major constraint. Base case: activity regains momentum as households adapt to structurally higher rates, but stronger rebound unlikely. Risk case: bond market stress deepens if fiscal concerns spread beyond France, keeping mortgage rates higher for longer. Bold case: political 'whatever it takes' moment for housing. Persistent supply-demand mismatch should floor house prices, limiting significant correction.",
+      "story_ids": [
+        "france-ecb"
+      ]
     },
     {
       "id": "rates-spark-us-inflation-too-hot-for-comfort",
       "date": "2026-11-10",
       "title": "Rates Spark: US inflation likely too hot for comfort",
       "url": "https://think.ing.com/articles/rates-spark-us-inflation-too-hot-for-comfort/",
-      "summary": "[auto] Mechanical summary (not analysed): Lower oil doesn't have as strong an impact on rates as a few months ago Risk sentiment improved a tad on Monday, helped by oil easing lower and a recovery in AI stocks. But the bid for duration seems to stick and most global 10yr rates managed to tick a few bp lower. [article, rates]",
-      "story_ids": []
+      "summary": "Lower oil has diminished impact on rates; oil-rate correlation has weakened significantly. Risk sentiment improved with oil easing and AI stocks recovering. Global 10yr rates ticked lower. US CPI expected at 0.3% MoM headline and core - above the 0.17% needed for 2% annualized Fed target. Brent near $90/bl helps ease inflation risks but doesn't remove upside risks. Focus rotating toward second-round effects. Fed officials Waller, Logan, Schmid and Paulson speaking Tuesday; US Treasury sells new 10y notes (US$42bn).",
+      "story_ids": [
+        "usd-rates-ai",
+        "oil-iran"
+      ]
     }
   ],
   "stories": [
@@ -517,8 +528,8 @@
       "id": "france-ecb",
       "name": "French fiscal crisis and the ECB",
       "category": "Europe",
-      "updated": "2026-11-05",
-      "summary": "The 2027 budget is going nowhere except towards a wider deficit: after eleven days the National Assembly rejected the revenue side unanimously by 458 votes, adopted amendments have already added €23.9bn (taking the deficit to an estimated 5.9% of GDP against the 5% target), and with the 70-day deadline expiring on 18 December the government's only routes are Article 49.3 or a budget by ordinance. Unions mobilise on 5 November over wages and purchasing power while growth stays near zero - 3Q GDP fell 0.1%, consumer confidence dropped five points to 80 and a net 27% of banks tightened credit - and ING sees just 0.3% growth this year and 0.5% in 2027, a deficit near 5.5% of GDP and debt above the 121.7% forecast, with the 10y OAT at 4.9% and more than 155bp over Bund against 70bp at end-2025. Fitch's unscheduled move of the A+ outlook to negative is now compounded by a spread market pricing France as if rated BBB; ING sees 150bp OAT/Bund as a floor through the 18 April and 2 May 2027 presidential rounds with a Mélenchon tail beyond 200bp, and expects the ECB to let markets work - the TPI bar is high. Eurozone October inflation at 4.0% with core at 2.5% keeps a December ECB hike on track and the succession (Knot hawkish, de Cos the dove) is the other EUR lever.",
+      "updated": "2026-11-10",
+      "summary": "The ECB held on 29 Oct and kept a December hike in play, arguing that wider French spreads are already doing the tightening for it. Lagarde announced she steps down on 7 February 2027, so the support sequence (verbal softening, then a QT pause, then TPI) has to survive a leadership change. Eurozone housing recovery in 2027 faces affordability constraints; bond market stress could deepen if fiscal concerns spread beyond France. ECB succession race between de Cos (dove) and Knot (hawk) seen as contained impact. April 2027 elections remain the cliff edge.",
       "pairs": [
         "EURUSD",
         "EURCHF",
@@ -556,13 +567,15 @@
         "france-social-fiscal-squeeze",
         "euro-spreads-duel-bad",
         "euro-rates-nervous",
-        "fx-daily-democratic-sweep"
+        "fx-daily-democratic-sweep",
+        "fx-daily-dollar-rally-needs-more-risk-off-fuel",
+        "eurozone-housing-market-in-2027-recovery-relapse"
       ],
       "scenarios": [
         {
           "name": "Contained, grinding stress",
           "type": "base",
-          "probability": 63,
+          "probability": 62,
           "description": "Spreads hold roughly 145-175bp after the Moody's relief, budget talks drag on and the ECB holds at 2.5% with a neutral message. No TPI.",
           "triggers": [
             "OAT-Bund spread",
@@ -600,6 +613,11 @@
               "date": "2026-11-05",
               "probability": 63,
               "note": "Budget deadlock deepens: revenue side rejected 458-0, amendments at 5.9% of GDP, 5 Nov strikes"
+            },
+            {
+              "date": "2026-11-10",
+              "probability": 62,
+              "note": "ECB succession race (de Cos vs Knot) seen as contained impact; eurozone housing risk adds mild contagion possibility. Cut 63 -> 62."
             }
           ]
         },
@@ -643,13 +661,18 @@
               "date": "2026-11-05",
               "probability": 9,
               "note": "A credible 2027 budget looks further away after the 458-0 rejection"
+            },
+            {
+              "date": "2026-11-10",
+              "probability": 9,
+              "note": "Unchanged at 9: no new French-specific relief signals."
             }
           ]
         },
         {
           "name": "Contagion and ECB backstop",
           "type": "bear",
-          "probability": 22,
+          "probability": 23,
           "description": "Spreads blow out past 180bp, Italy/Spain widen, ECB pauses QT or reinvests flexibly, and TPI becomes live (possibly excluding France).",
           "triggers": [
             "Spread above 180bp",
@@ -687,6 +710,11 @@
               "date": "2026-11-05",
               "probability": 22,
               "note": "Fitch negative plus ING's 150bp floor/200bp tail keep the tail alive, no new trigger"
+            },
+            {
+              "date": "2026-11-10",
+              "probability": 23,
+              "note": "Raised 22 -> 23: eurozone housing paper flags fiscal concerns beyond France keeping long-term yields elevated; ECB succession adds mild uncertainty."
             }
           ]
         },
@@ -730,6 +758,11 @@
               "date": "2026-11-05",
               "probability": 6,
               "note": "No auction failure or downgrade cascade; unchanged"
+            },
+            {
+              "date": "2026-11-10",
+              "probability": 6,
+              "note": "Unchanged at 6: no new disorderly signals."
             }
           ]
         }
@@ -739,8 +772,8 @@
       "id": "oil-iran",
       "name": "Oil shock and US-Iran re-escalation",
       "category": "Geopolitics / Commodities",
-      "updated": "2026-11-05",
-      "summary": "Brent has slid from the $113/bbl settle on 30 October to well below $100 - an 8% one-day drop - as Trump lets diplomacy with Iran run and Iranian negotiators talk to Qatari mediators, with the Democratic sweep adding risk-on momentum, though ING notes oil barely moved on the election result itself and the war is not over. The lower price is already doing macro work: front-end euro inflation swaps have dropped, the market prices only a little more than 50bp of ECB tightening by summer 2027 and ING's 2027 outlooks assume oil below $80/bbl. The physical buffer is thinner than the price action implies, with the ICE Brent net long far below March's peak and renewed Ukrainian attacks on Russian refineries holding the gasoil crack up, and Norway's krone is the clearest casualty as ING sees EUR/NOK back to 10.50 and ending the year at 10.55-10.65.",
+      "updated": "2026-11-10",
+      "summary": "Brent holds around $95-100 with the market waiting for the 3 November midterms before repricing Gulf risk; simply getting past the vote without strikes could erode the premium without any US-Iran deal. Gadi Eisenkot given mandate to form Israeli government, seen as more diplomatic on Iran. TTF broke above EUR100/MWh earlier but gas prices have eased. Products are loosening - Russia lifted its diesel export ban and the gasoil crack fell to ~$70 - but crude and gas supply risk stay the swing factors.",
       "pairs": [
         "USDCAD",
         "USDNOK",
@@ -760,13 +793,15 @@
         "rates-spark-boe-hike-club",
         "fx-daily-rate-ingredient",
         "rates-spark-blue-wave",
-        "commodities-iran-talks"
+        "commodities-iran-talks",
+        "fx-daily-dollar-rally-needs-more-risk-off-fuel",
+        "rates-spark-us-inflation-too-hot-for-comfort"
       ],
       "scenarios": [
         {
           "name": "Elevated premium, no major disruption",
           "type": "base",
-          "probability": 36,
+          "probability": 34,
           "description": "Brent stays $100-120 on threats and military build-up, with flows still intact.",
           "triggers": [
             "Gulf shipping flows",
@@ -798,13 +833,18 @@
               "date": "2026-11-05",
               "probability": 36,
               "note": "Brent broke below $100 on diplomacy, out of the $100-120 band"
+            },
+            {
+              "date": "2026-11-10",
+              "probability": 34,
+              "note": "Cut 36 -> 34: Brent stabilized below $100 and ticking toward $90; oil-rate correlation diminished."
             }
           ]
         },
         {
           "name": "De-escalation",
           "type": "bull",
-          "probability": 29,
+          "probability": 31,
           "description": "Diplomacy or the midterm effect calms tensions; the premium unwinds and Brent heads toward $90.",
           "triggers": [
             "Talks announced",
@@ -836,6 +876,11 @@
               "date": "2026-11-05",
               "probability": 29,
               "note": "Trump lets diplomacy run, Doha talks, oil down 8% in a day"
+            },
+            {
+              "date": "2026-11-10",
+              "probability": 31,
+              "note": "Raised 29 -> 31: Gadi Eisenkot given mandate to form Israeli government, seen as more diplomatic on Iran; peace negotiations making timid progress."
             }
           ]
         },
@@ -875,6 +920,11 @@
               "date": "2026-11-05",
               "probability": 29,
               "note": "War not over and oil barely moved on the midterms, so only a small cut"
+            },
+            {
+              "date": "2026-11-10",
+              "probability": 29,
+              "note": "Unchanged at 29: geopolitical risk remains but no new escalation signals."
             }
           ]
         },
@@ -913,6 +963,11 @@
               "date": "2026-11-05",
               "probability": 6,
               "note": "No flow disruption; unchanged"
+            },
+            {
+              "date": "2026-11-10",
+              "probability": 6,
+              "note": "Unchanged at 6: no new supply disruption evidence."
             }
           ]
         }
@@ -922,8 +977,8 @@
       "id": "usd-rates-ai",
       "name": "US rates, Fed hike risk and AI-valuation wobble",
       "category": "US / Rates",
-      "updated": "2026-11-05",
-      "summary": "The blue wave delivered exactly the mild dollar-negative move ING expected - US 2y yields fell 8-9bp and DXY touched 101.25 before stabilising, with ING seeing a 101.0-101.50 base rather than another break lower because lower oil is not unequivocally dollar-negative and US data still argue for tightening (ADP 86k, ISM services employment at 51.4, payrolls consensus 65k). The 2027 call is for the 10y Treasury back above 5.25% and possibly 5.5% in the first quarter on AI-sparked productivity, deficits and sticky inflation, then 4.5-4.75% later in the year as inflation eases and cuts are re-discounted - with three plausible routes to 6% - and for 10y swap spreads to re-widen above 50bp. Sterling rates sit above ING's fair value with the market pricing at least 100bp of further BoE hikes to a 4.75% terminal rate that ING rejects, and the BoE is expected to hike 25bp to 4.00% today on a 7-2 vote with a February follow-up as the base case. The AI angle cuts both ways: Korean and Taiwanese equities fell 3-4% on the result before recouping, and the Democrats' firmer line on data centres is a policy headwind for the capex boom.",
+      "updated": "2026-11-10",
+      "summary": "The Fed held at 3.75-4.00% on a 10-2 vote with two dissents for a hike, and Warsh kept December alive ('no ifs, ands or buts' on price stability); the 10y has validated its break back above 5% and ING still targets 5.25%. Strong payrolls (165k) and CPI expected at 0.3% MoM support the hawkish path. AI-valuation fear is fading as chip earnings recover, handing the dollar back to the hawkish-rate story, with DXY pressing 101.50-102.50. The RBNZ's dovish 4-3 hold (NZD -1.4%) and the BoC's 25bp hike to 2.50% show how much FX risk sits in central-bank surprises.",
       "pairs": [
         "USDJPY",
         "USDCHF",
@@ -963,13 +1018,16 @@
         "euro-rates-nervous",
         "gbp-rates-delayed-landing",
         "commodities-iran-talks",
-        "fx-daily-democratic-sweep"
+        "fx-daily-democratic-sweep",
+        "fx-daily-tech-collapses-fx-shrugs",
+        "fx-daily-dollar-rally-needs-more-risk-off-fuel",
+        "rates-spark-us-inflation-too-hot-for-comfort"
       ],
       "scenarios": [
         {
           "name": "Choppy around 5%, Dec hike alive",
           "type": "base",
-          "probability": 37,
+          "probability": 35,
           "description": "10y oscillates around 5%, USD consolidates if risk calms; JPY/CHF keep a haven bid on sell-offs.",
           "triggers": [
             "FOMC",
@@ -1007,13 +1065,18 @@
               "date": "2026-11-05",
               "probability": 37,
               "note": "DXY stabilises 101.0-101.50, 10y 4.9%, ING sees 5.25%+ in 1Q27"
+            },
+            {
+              "date": "2026-11-10",
+              "probability": 35,
+              "note": "Cut 37 -> 35: strong payrolls (165k) and hot CPI expectations shift weight toward sustained hawkish path."
             }
           ]
         },
         {
           "name": "Yields back above 5%, hawkish Fed",
           "type": "bull",
-          "probability": 34,
+          "probability": 36,
           "description": "Inflation, deficits and oil push yields up; December hike priced in; USD rebounds.",
           "triggers": [
             "Hot CPI",
@@ -1051,6 +1114,11 @@
               "date": "2026-11-05",
               "probability": 34,
               "note": "ING's 2027 baseline is 5.25-5.5% on AI productivity, deficits and sticky inflation"
+            },
+            {
+              "date": "2026-11-10",
+              "probability": 36,
+              "note": "Raised 34 -> 36: October CPI expected at 0.3% MoM headline and core; December hike 19bp priced; dollar resilient despite tech selloff."
             }
           ]
         },
@@ -1094,6 +1162,11 @@
               "date": "2026-11-05",
               "probability": 24,
               "note": "Blue-wave tech sell-off fully recouped; Democrats' data-centre stance a slower-burn risk"
+            },
+            {
+              "date": "2026-11-10",
+              "probability": 24,
+              "note": "Unchanged at 24: tech selloff was significant but FX markets shrugged it off; AI stocks recovering."
             }
           ]
         },
@@ -1137,6 +1210,11 @@
               "date": "2026-11-05",
               "probability": 5,
               "note": "Unchanged"
+            },
+            {
+              "date": "2026-11-10",
+              "probability": 5,
+              "note": "Unchanged at 5: no disorderly market signals."
             }
           ]
         }
@@ -1299,6 +1377,30 @@
     {
       "date": "2026-11-10",
       "text": "Auto-ingest (GitHub Actions): 2 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-10",
+      "text": "FX Daily (6 Nov): Tech selloff hit equities but FX shrugged it off - JPY/CHF gained, AUD/NZD underperformed, dollar resilient at 101.50-102.50. US short-dated rates fell ~50bp since late September. Banxico cut to 6.25% (3-2)."
+    },
+    {
+      "date": "2026-11-10",
+      "text": "FX Daily (9 Nov): Dollar rallied on strong payrolls (165k) but move may be stretched. October CPI expected at 0.3% MoM, supporting December Fed hike (19bp priced). Brent below $100. Eisenkot given Israeli government mandate, seen as more diplomatic. EUR/USD undervalued 2.1-2.3%. BoE expected to hike in February."
+    },
+    {
+      "date": "2026-11-10",
+      "text": "Eurozone housing (10 Nov): Housing recovering in 2027 but affordability constrained. Risk case: bond market stress deepens if fiscal concerns spread beyond France. Mild contagion risk for France-ECB story."
+    },
+    {
+      "date": "2026-11-10",
+      "text": "Rates Spark (10 Nov): US CPI expected at 0.3% MoM headline and core - above 0.17% needed for 2% annualized Fed target. Brent near $90/bl but oil-rate correlation diminished. Focus rotating to second-round effects. Hawkish-Fed scenario raised 34% -> 36%, choppy base cut 37% -> 35%."
+    },
+    {
+      "date": "2026-11-10",
+      "text": "Oil: Brent stabilized below $100 and ticking toward $90; Eisenkot more diplomatic on Iran. De-escalation raised 29% -> 31%, elevated premium cut 36% -> 34%."
+    },
+    {
+      "date": "2026-11-10",
+      "text": "France-ECB: ECB succession race (de Cos vs Knot) seen as contained; eurozone housing adds mild contagion possibility. Contagion/ECB-backstop raised 22% -> 23%, contained stress cut 63% -> 62%."
     }
   ]
 }
