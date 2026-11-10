@@ -494,6 +494,22 @@
       "url": "https://think.ing.com/articles/fx-daily-dollar-rally-needs-more-risk-off-fuel/",
       "summary": "[auto] Mechanical summary (not analysed): USD: At risk of correction The dollar has emerged stronger after markets digested last Thursday's big tech-led equity selloff. The greenback was already gaining ground across the board even before US payrolls (165k) smashed expectations on Friday afternoon. [article, fx]",
       "story_ids": []
+    },
+    {
+      "id": "eurozone-housing-market-in-2027-recovery-relapse",
+      "date": "2026-11-10",
+      "title": "Eurozone housing market in 2027: recovery, relapse or revolution?",
+      "url": "https://think.ing.com/articles/eurozone-housing-market-in-2027-recovery-relapse-or-revolution/",
+      "summary": "[auto] Mechanical summary (not analysed): A eurozone housing market recovery may be on the cards for 2027, but there is more than one way the story could unfold. Affordability, interest rates and the political response to Europe’s housing crisis set the scene for three very different scenarios [article, macro]",
+      "story_ids": []
+    },
+    {
+      "id": "rates-spark-us-inflation-too-hot-for-comfort",
+      "date": "2026-11-10",
+      "title": "Rates Spark: US inflation likely too hot for comfort",
+      "url": "https://think.ing.com/articles/rates-spark-us-inflation-too-hot-for-comfort/",
+      "summary": "[auto] Mechanical summary (not analysed): Lower oil doesn't have as strong an impact on rates as a few months ago Risk sentiment improved a tad on Monday, helped by oil easing lower and a recovery in AI stocks. But the bid for duration seems to stick and most global 10yr rates managed to tick a few bp lower. [article, rates]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1279,6 +1295,10 @@
     {
       "date": "2026-11-09",
       "text": "Auto-ingest (GitHub Actions): 1 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-10",
+      "text": "Auto-ingest (GitHub Actions): 2 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
 }
