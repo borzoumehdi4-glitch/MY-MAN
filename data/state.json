@@ -468,16 +468,20 @@
       "date": "2026-11-05",
       "title": "Czech National Bank review: The new neutral normal",
       "url": "https://think.ing.com/articles/czech-national-bank-review-the-new-neutral-normal/",
-      "summary": "[auto] Mechanical summary (not analysed): Punchier inflation amid mediocre economic performance The CNB proceeded with a rate hike on Thursday, raising the base rate to 4%, which matches the expectations of market participants. The decision was taken in a split vote as four board members favoured a tighter monetary policy setup, while three policymakers opted for rate stability. [article, fx]",
-      "story_ids": []
+      "summary": "The CNB raised its base rate to 4% on a split 4-3 vote, matching market expectations. Persistently elevated core inflation, weaker exchange rate, strong housing market and ample credit growth were cited as risks to price stability. The CNB forecast suggests a further increase up to 4.5% in the near term, followed by a gradual decline to 3.5% by end-2028. ING sees 4% as the new neutral normal, enabling the CNB to ride out second-round effects if its GDP and inflation forecasts prove right. EUR/CZK expected in the 24.350-24.400 range. Two additional rate hikes seen as the minimum the market will tolerate.",
+      "story_ids": [
+        "usd-rates-ai"
+      ]
     },
     {
       "id": "rates-spark-treasury-heat-from-tech-flight-but-f",
       "date": "2026-11-05",
       "title": "Rates Spark: Treasury heat from tech flight - but for how long?",
       "url": "https://think.ing.com/articles/rates-spark-treasury-heat-from-tech-flight-but-for-how-long/",
-      "summary": "[auto] Mechanical summary (not analysed): A creeping move lower in equities would eventually be ignored by Treasuries. But a large dump in equities would not The US 10yr yield is now down some 50bp from its recent highs. The drivers have been real money value hunters (mostly domestic, but also including international players), some fast money longs in Treasuries versus payers in SOFR in a short swap spread trade, and... [article, rates]",
-      "story_ids": []
+      "summary": "The US 10yr yield is down ~50bp from recent highs, now in the low 4.80s%, as AI jitters drive safety flows into Treasuries. The 4.65% area is seen as the potential floor if risk-off intensifies. The market is ignoring elevated inflation, fiscal deficits and the AI growth boost. Jobless claims remain very low; unemployment expected to stay at 4.2%. The BoE hiked as expected with every committee member agreeing, revising inflation forecasts higher - markets now price a 50% chance of a December hike and at least one more in 2027. US jobs report expected at 65k non-farm payrolls for October.",
+      "story_ids": [
+        "usd-rates-ai"
+      ]
     },
     {
       "id": "fx-daily-tech-collapses-fx-shrugs",
@@ -1019,6 +1023,8 @@
         "gbp-rates-delayed-landing",
         "commodities-iran-talks",
         "fx-daily-democratic-sweep",
+        "czech-national-bank-review-the-new-neutral-norma",
+        "rates-spark-treasury-heat-from-tech-flight-but-f",
         "fx-daily-tech-collapses-fx-shrugs",
         "fx-daily-dollar-rally-needs-more-risk-off-fuel",
         "rates-spark-us-inflation-too-hot-for-comfort"
@@ -1401,6 +1407,14 @@
     {
       "date": "2026-11-10",
       "text": "France-ECB: ECB succession race (de Cos vs Knot) seen as contained; eurozone housing adds mild contagion possibility. Contagion/ECB-backstop raised 22% -> 23%, contained stress cut 63% -> 62%."
+    },
+    {
+      "date": "2026-11-10",
+      "text": "CNB review (5 Nov): Czech National Bank raised rate to 4% on 4-3 split vote, seen as the new neutral normal. Further hike to 4.5% possible. EUR/CZK expected 24.350-24.400."
+    },
+    {
+      "date": "2026-11-10",
+      "text": "Treasury heat (5 Nov): US 10yr yield down ~50bp to low 4.80s on AI jitters and safety flows. BoE hiked with all members agreeing; markets price 50% chance of December hike. US jobs report expected at 65k payrolls, unemployment 4.2%."
     }
   ]
 }
