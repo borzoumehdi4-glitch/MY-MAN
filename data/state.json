@@ -525,6 +525,46 @@
         "usd-rates-ai",
         "oil-iran"
       ]
+    },
+    {
+      "id": "as-good-as-it-gets-for-the-dollar-3-calls-for-fx",
+      "date": "2026-11-10",
+      "title": "As good as it gets for the dollar: 3 calls for FX",
+      "url": "https://think.ing.com/articles/as-good-as-it-gets-for-the-dollar-3-calls-for-fx/",
+      "summary": "[auto] Mechanical summary (not analysed): We expect the dollar to stay supported over the coming months and turn lower next spring [article, fx]",
+      "story_ids": []
+    },
+    {
+      "id": "rates-on-the-brink-3-calls-for-rates",
+      "date": "2026-11-10",
+      "title": "Rates on the brink: 3 calls for 2027",
+      "url": "https://think.ing.com/articles/rates-on-the-brink-3-calls-for-rates/",
+      "summary": "[auto] Mechanical summary (not analysed): We think that lower inflation eventually saves the day, but things should run hot and bothered for a bit longer first [article, rates]",
+      "story_ids": []
+    },
+    {
+      "id": "the-commodities-feed-oil-retreats-on-easing-midd",
+      "date": "2026-11-10",
+      "title": "The Commodities Feed: Oil slides on easing Middle East tensions",
+      "url": "https://think.ing.com/articles/the-commodities-feed-oil-retreats-on-easing-middle-east-tensions/",
+      "summary": "[auto] Mechanical summary (not analysed): Energy - Oil extends losses Oil prices extended their decline on Tuesday, with Brent falling below $92/bbl and WTI trading around $86/bbl. The market has continued to unwind some of the geopolitical risk premium built into prices in recent weeks as expectations grow that the conflict between the US and Iran could move towards de-escalation. [article, commodities]",
+      "story_ids": []
+    },
+    {
+      "id": "fx-daily-bearish-yield-curve-flattening-lifts-do",
+      "date": "2026-11-11",
+      "title": "FX Daily: Bearish yield curve flattening lifts the dollar",
+      "url": "https://think.ing.com/articles/fx-daily-bearish-yield-curve-flattening-lifts-dollar/",
+      "summary": "[auto] Mechanical summary (not analysed): USD: Big moves in short-dated rates The Fed's Chris Waller tossed a hawkish grenade into money markets early yesterday with his threat to vote for a 50bp rate hike at the 9 December FOMC meeting. He conditioned this on the October CPI data coming in hot for the third month in a row, which it subsequently did. [article, fx]",
+      "story_ids": []
+    },
+    {
+      "id": "rates-spark-back-to-a-5-10y-ust-on-inflation-fea",
+      "date": "2026-11-11",
+      "title": "Rates Spark: Back to a 5% 10Y UST on inflation fears",
+      "url": "https://think.ing.com/articles/rates-spark-back-to-a-5-10y-ust-on-inflation-fears/",
+      "summary": "[auto] Mechanical summary (not analysed): Impact from hot US inflation was amplified by Fed comments An unpleasant US inflation surprise for rates, taking the 10Y UST yield right back to 5%, is a justified move in our view. A core CPI reading of 0.3% MoM annualises to a yearly inflation number well above 3% and far from the Fed’s target. [article, macro/rates]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1415,6 +1455,10 @@
     {
       "date": "2026-11-10",
       "text": "Treasury heat (5 Nov): US 10yr yield down ~50bp to low 4.80s on AI jitters and safety flows. BoE hiked with all members agreeing; markets price 50% chance of December hike. US jobs report expected at 65k payrolls, unemployment 4.2%."
+    },
+    {
+      "date": "2026-11-11",
+      "text": "Auto-ingest (GitHub Actions): 5 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
 }
