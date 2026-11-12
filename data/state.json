@@ -565,6 +565,38 @@
       "url": "https://think.ing.com/articles/rates-spark-back-to-a-5-10y-ust-on-inflation-fears/",
       "summary": "[auto] Mechanical summary (not analysed): Impact from hot US inflation was amplified by Fed comments An unpleasant US inflation surprise for rates, taking the 10Y UST yield right back to 5%, is a justified move in our view. A core CPI reading of 0.3% MoM annualises to a yearly inflation number well above 3% and far from the Fed’s target. [article, macro/rates]",
       "story_ids": []
+    },
+    {
+      "id": "the-commodities-feed-oil-rebounds-as-geopolitica",
+      "date": "2026-11-11",
+      "title": "The Commodities Feed: Oil rebounds as geopolitical risks linger",
+      "url": "https://think.ing.com/articles/the-commodities-feed-oil-rebounds-as-geopolitical-risks-linger/",
+      "summary": "[auto] Mechanical summary (not analysed): Energy – Oil edges higher as Middle East uncertainty persists Oil prices edged higher in early trading today after falling below $90/bbl yesterday. While expectations of improving Middle Eastern supply availability and bearish US inventory data have weighed on the market, uncertainty around the US-Iran conflict continues to provide some support. [article, commodities]",
+      "story_ids": []
+    },
+    {
+      "id": "webinar-the-g10-fx-winners-and-losers-in-2027",
+      "date": "2026-11-11",
+      "title": "Webinar: The G10 FX winners and losers in 2027",
+      "url": "https://think.ing.com/articles/webinar-the-g10-fx-winners-and-losers-in-2027/",
+      "summary": "[auto] Mechanical summary (not analysed): Join ING's FX team as they discuss their views on the main themes driving core FX trends in 2027 [article, fx/macro]",
+      "story_ids": []
+    },
+    {
+      "id": "fx-daily-eur-usd-gears-up-for-a-110-test",
+      "date": "2026-11-12",
+      "title": "FX Daily: EUR/USD gears up for a 1.10 test",
+      "url": "https://think.ing.com/articles/fx-daily-eur-usd-gears-up-for-a-110-test/",
+      "summary": "[auto] Mechanical summary (not analysed): USD: Hawkish skew ahead The combination of hawkish Fedspeak and a US CPI beat earlier this week continues to pay dividends for the dollar. DXY is now back at Liberation Day (April 2025) levels, with real front-end rate differentials continuing to fuel strong dollar momentum. [article, fx]",
+      "story_ids": []
+    },
+    {
+      "id": "rates-spark-inflation-pricing-sending-mixed-sign",
+      "date": "2026-11-12",
+      "title": "Rates Spark: Inflation pricing sends mixed signals",
+      "url": "https://think.ing.com/articles/rates-spark-inflation-pricing-sending-mixed-signals/",
+      "summary": "[auto] Mechanical summary (not analysed): Long-term inflation pricing is not reflecting upside risks Markets are anxious about near-term inflation surprises but seem to view structural inflation very benignly, a risk we see as possibly underpriced. Despite this week’s US inflation surprise and still-high energy prices, long-term market measures of inflation expectations remain low by historical standards. [article, rates]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1459,6 +1491,10 @@
     {
       "date": "2026-11-11",
       "text": "Auto-ingest (GitHub Actions): 5 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-12",
+      "text": "Auto-ingest (GitHub Actions): 4 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
 }
