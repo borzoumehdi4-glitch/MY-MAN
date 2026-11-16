@@ -685,6 +685,14 @@
       "url": "https://think.ing.com/articles/rates-spark-higher-rates-amid-a-fragile-calm/",
       "summary": "[auto] Mechanical summary (not analysed): Tactically bearish on rates but AI event risk ahead of us Price action suggests global rates are happy to push higher again, and we therefore return to our tactical bearish call. Risk sentiment is improving, with AI worries turning more idiosyncratic, focused mostly on NVIDIA’s leadership questions. [article, macro/rates]",
       "story_ids": []
+    },
+    {
+      "id": "fx-daily-time-for-a-break-below-110-in-eur-usd",
+      "date": "2026-11-16",
+      "title": "FX Daily: Time for a break below 1.10 in EUR/USD?",
+      "url": "https://think.ing.com/articles/fx-daily-time-for-a-break-below-110-in-eur-usd/",
+      "summary": "[auto] Mechanical summary (not analysed): USD: Strong momentum looks harder to unwind The macro backdrop makes it risky to call for a dollar correction just yet. Two-year USD swap rates have risen 35bp since the Federal Reserve's Christopher Waller mentioned a 50bp hike and core CPI overshot on 10 November, while other Fed speakers have done little to quell the hawkish repricing. [article, fx]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1587,6 +1595,10 @@
     {
       "date": "2026-11-13",
       "text": "Auto-ingest (GitHub Actions): 11 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-16",
+      "text": "Auto-ingest (GitHub Actions): 1 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
 }
