@@ -749,6 +749,22 @@
         "usd-rates-ai",
         "france-ecb"
       ]
+    },
+    {
+      "id": "eurozone-industrial-production-ticked-up-but-sti",
+      "date": "2026-11-16",
+      "title": "Eurozone industrial production ticked up but still unimpressive in September",
+      "url": "https://think.ing.com/snaps/eurozone-industrial-production-ticked-up-but-still-unimpressive-in-september/",
+      "summary": "[auto] Mechanical summary (not analysed): The increase of 0.2% compared to August still leaves production well below levels seen in 2025. Despite optimistic manufacturing surveys, industrial production is not showing signs of a rebound [article, macro]",
+      "story_ids": []
+    },
+    {
+      "id": "fx-daily-dollar-showing-resilience-to-tech-stock",
+      "date": "2026-11-17",
+      "title": "FX Daily: Dollar showing resilience to tech stock instability",
+      "url": "https://think.ing.com/articles/fx-daily-dollar-showing-resilience-to-tech-stock-instability/",
+      "summary": "[auto] Mechanical summary (not analysed): Please see ING's FX Outlook 2027: Fat tails, slim ranges for insights into key themes next year. USD: Staying strong The drop in US tech stocks has done little to dent the dollar’s strong momentum. [article, fx]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1830,6 +1846,10 @@
     {
       "date": "2026-11-16",
       "text": "Nov 16: Dollar corrections likely to be faded; market pricing back-to-back 25bp December/January hikes. EUR/USD can hold 1.100 this week but break lower risks significant."
+    },
+    {
+      "date": "2026-11-17",
+      "text": "Auto-ingest (GitHub Actions): 2 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
 }
