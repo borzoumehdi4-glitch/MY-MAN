@@ -765,6 +765,30 @@
       "url": "https://think.ing.com/articles/fx-daily-dollar-showing-resilience-to-tech-stock-instability/",
       "summary": "[auto] Mechanical summary (not analysed): Please see ING's FX Outlook 2027: Fat tails, slim ranges for insights into key themes next year. USD: Staying strong The drop in US tech stocks has done little to dent the dollar’s strong momentum. [article, fx]",
       "story_ids": []
+    },
+    {
+      "id": "rates-spark-ai-earnings-and-new-highs-for-rates",
+      "date": "2026-11-17",
+      "title": "Rates Spark: Can AI confidence bring rates back up?",
+      "url": "https://think.ing.com/articles/rates-spark-ai-earnings-and-new-highs-for-rates/",
+      "summary": "[auto] Mechanical summary (not analysed): Corporate earnings announcements now part of the macro realm We’ll be keeping an eye on Nvidia’s earnings announcement as these results have become an important bellwether for the broader AI story. The stakes are high, with Nvidia making up 5% of the S&P 500 market capitalisation. We’ve just come through a period of fragile AI sentiment, which has had a direct impact on rates. [article, rates]",
+      "story_ids": []
+    },
+    {
+      "id": "the-commodities-feed-gold-slides-to-lowest-since",
+      "date": "2026-11-17",
+      "title": "The Commodities Feed: Metals under pressure while oil supply improves",
+      "url": "https://think.ing.com/articles/the-commodities-feed-gold-slides-to-lowest-since-october-2025/",
+      "summary": "[auto] Mechanical summary (not analysed): Energy - Oil extends decline as supply concerns ease Oil prices extended their decline for a second session, with Brent trading below $92/bbl as improving supply conditions outweighed continued geopolitical risks in the Middle East. The physical picture has improved considerably in recent months. [article, commodities]",
+      "story_ids": []
+    },
+    {
+      "id": "fx-daily-commodity-complex-is-having-a-moment",
+      "date": "2026-11-18",
+      "title": "FX Daily: Commodity complex is having a moment",
+      "url": "https://think.ing.com/articles/fx-daily-commodity-complex-is-having-a-moment/",
+      "summary": "[auto] Mechanical summary (not analysed): Please see our 2027 FX Outlook for all the key themes driving FX trends next year. USD: Topside pressure building We have been discussing it for more than a week now, but those comments from the Fed's Chris Waller last Tuesday really focused minds on an extended Fed tightening cycle. Since then, price data has come in hot, while US activity data is also performing well. [article, fx]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1850,6 +1874,10 @@
     {
       "date": "2026-11-17",
       "text": "Auto-ingest (GitHub Actions): 2 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-18",
+      "text": "Auto-ingest (GitHub Actions): 3 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
 }
