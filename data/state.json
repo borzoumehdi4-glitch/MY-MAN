@@ -789,6 +789,30 @@
       "url": "https://think.ing.com/articles/fx-daily-commodity-complex-is-having-a-moment/",
       "summary": "[auto] Mechanical summary (not analysed): Please see our 2027 FX Outlook for all the key themes driving FX trends next year. USD: Topside pressure building We have been discussing it for more than a week now, but those comments from the Fed's Chris Waller last Tuesday really focused minds on an extended Fed tightening cycle. Since then, price data has come in hot, while US activity data is also performing well. [article, fx]",
       "story_ids": []
+    },
+    {
+      "id": "rates-spark-123456",
+      "date": "2026-11-18",
+      "title": "Rates Spark: Testing the AI narrative",
+      "url": "https://think.ing.com/articles/rates-spark-123456/",
+      "summary": "[auto] Mechanical summary (not analysed): Focus remains on the AI narrative Market sentiment was already jittery ahead of the Nvidia earnings report and amid headlines of a “controlled” escalation in the Middle East. 10y Treasury and Bund yields saw swings of 4bp to 5bp, ultimately ending lower, defying a hawkish backdrop from hotter-than-anticipated retail sales data and Fed commentary on the need for further... [article, rates]",
+      "story_ids": []
+    },
+    {
+      "id": "the-commodities-feed-copper-hits-five-month-low",
+      "date": "2026-11-18",
+      "title": "The Commodities Feed: Copper hits six-month low; improving supply weighs on oil",
+      "url": "https://think.ing.com/articles/the-commodities-feed-copper-hits-five-month-low-improving-supply-weighs-on-oil/",
+      "summary": "[auto] Mechanical summary (not analysed): Energy - Recovering supply keeps pressure on oil Oil prices edged lower in early trading as recovering supply and bearish US inventory data outweighed renewed geopolitical risks. Brent was trading around $92/bbl, while WTI remained below $85/bbl. API data showed US crude inventories rising by 5.3m barrels last week, well above expectations for a modest 0.4m barrel build. [article, commodities]",
+      "story_ids": []
+    },
+    {
+      "id": "rates-spark-ecb-reserve-rethink-would-bring-fund",
+      "date": "2026-11-19",
+      "title": "Rates Spark: ECB reserve rethink would bring funding pressure closer",
+      "url": "https://think.ing.com/articles/rates-spark-ecb-reserve-rethink-would-bring-funding-pressure-closer/",
+      "summary": "[auto] Mechanical summary (not analysed): Longer rates remain sensitive to jittery tech sentiment, while front-ends face hawkish central bank commentary. A potential ECB move to double minimum reserves in December would cut excess liquidity by €175bn and save the ECB €4.4bn a year – but bring pressure on money markets closer [article, macro]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1877,6 +1901,10 @@
     },
     {
       "date": "2026-11-18",
+      "text": "Auto-ingest (GitHub Actions): 3 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-19",
       "text": "Auto-ingest (GitHub Actions): 3 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
