@@ -813,6 +813,14 @@
       "url": "https://think.ing.com/articles/rates-spark-ecb-reserve-rethink-would-bring-funding-pressure-closer/",
       "summary": "[auto] Mechanical summary (not analysed): Longer rates remain sensitive to jittery tech sentiment, while front-ends face hawkish central bank commentary. A potential ECB move to double minimum reserves in December would cut excess liquidity by €175bn and save the ECB €4.4bn a year – but bring pressure on money markets closer [article, macro]",
       "story_ids": []
+    },
+    {
+      "id": "fx-daily-will-closer-eu-ties-help-the-pound",
+      "date": "2026-11-20",
+      "title": "FX Daily: Carry trade unwind in full swing",
+      "url": "https://think.ing.com/articles/fx-daily-will-closer-eu-ties-help-the-pound/",
+      "summary": "[auto] Mechanical summary (not analysed): USD: The Waller correction After another day of losses, the US S&P 500 index is now 8.5% off its highs of the year. The extent of this correction is not far from that seen in March this year (9.5%) and way off the 'Liberation Day' rout of 21% seen in March/April 2025. [article, fx]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1906,6 +1914,10 @@
     {
       "date": "2026-11-19",
       "text": "Auto-ingest (GitHub Actions): 3 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Auto-ingest (GitHub Actions): 1 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
 }
