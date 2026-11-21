@@ -821,6 +821,14 @@
       "url": "https://think.ing.com/articles/fx-daily-will-closer-eu-ties-help-the-pound/",
       "summary": "[auto] Mechanical summary (not analysed): USD: The Waller correction After another day of losses, the US S&P 500 index is now 8.5% off its highs of the year. The extent of this correction is not far from that seen in March this year (9.5%) and way off the 'Liberation Day' rout of 21% seen in March/April 2025. [article, fx]",
       "story_ids": []
+    },
+    {
+      "id": "metals-sell-off-runs-ahead-of-physical-markets",
+      "date": "2026-11-20",
+      "title": "Metals sell-off runs ahead of physical markets",
+      "url": "https://think.ing.com/articles/metals-sell-off-runs-ahead-of-physical-markets/",
+      "summary": "[auto] Mechanical summary (not analysed): The speed of the sell-off looks more like a sharp repricing of investor exposure than a broad weakening in physical markets. Copper has taken the biggest hit as investors unwind bullish positions and reassess AI-related demand. Yet the sharp correction in prices contrasts with still-tight physical markets. [article, commodities]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1914,6 +1922,10 @@
     {
       "date": "2026-11-19",
       "text": "Auto-ingest (GitHub Actions): 3 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-20",
+      "text": "Auto-ingest (GitHub Actions): 1 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     },
     {
       "date": "2026-11-20",
