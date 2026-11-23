@@ -829,6 +829,14 @@
       "url": "https://think.ing.com/articles/metals-sell-off-runs-ahead-of-physical-markets/",
       "summary": "[auto] Mechanical summary (not analysed): The speed of the sell-off looks more like a sharp repricing of investor exposure than a broad weakening in physical markets. Copper has taken the biggest hit as investors unwind bullish positions and reassess AI-related demand. Yet the sharp correction in prices contrasts with still-tight physical markets. [article, commodities]",
       "story_ids": []
+    },
+    {
+      "id": "fx-daily-uneasy-calm-as-markets-stabilise",
+      "date": "2026-11-23",
+      "title": "FX Daily: Uneasy calm as markets stabilise",
+      "url": "https://think.ing.com/articles/fx-daily-uneasy-calm-as-markets-stabilise/",
+      "summary": "[auto] Mechanical summary (not analysed): USD: Hawkish Fed undercurrent still a dollar support After several support measures from authorities across Asia, local equity markets are stabilising. This has been helped in part by seeing US equity futures marked 2% higher today. [article, fx]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1929,6 +1937,10 @@
     },
     {
       "date": "2026-11-20",
+      "text": "Auto-ingest (GitHub Actions): 1 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-23",
       "text": "Auto-ingest (GitHub Actions): 1 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
