@@ -837,6 +837,30 @@
       "url": "https://think.ing.com/articles/fx-daily-uneasy-calm-as-markets-stabilise/",
       "summary": "[auto] Mechanical summary (not analysed): USD: Hawkish Fed undercurrent still a dollar support After several support measures from authorities across Asia, local equity markets are stabilising. This has been helped in part by seeing US equity futures marked 2% higher today. [article, fx]",
       "story_ids": []
+    },
+    {
+      "id": "rates-spark-nvidia-back-up",
+      "date": "2026-11-23",
+      "title": "Rates Spark: Jensen who?",
+      "url": "https://think.ing.com/articles/rates-spark-nvidia-back-up/",
+      "summary": "[auto] Mechanical summary (not analysed): Bonds view the Nvidia saga as nothing more than a sideshow The Nvidia reversal was reflected by a brief and ultimately minor tremor in Treasuries, but that was about it. The Treasury market effectively said - We see your 6% Nasdaq rally, but we're not for moving. [article, rates]",
+      "story_ids": []
+    },
+    {
+      "id": "frances-golden-rule-wont-fix-its-budget-problem",
+      "date": "2026-11-24",
+      "title": "France’s golden rule won’t fix its budget problem",
+      "url": "https://think.ing.com/articles/frances-golden-rule-wont-fix-its-budget-problem/",
+      "summary": "[auto] Mechanical summary (not analysed): EUROPE: French President Emmanuel Macron’s proposal to revive a constitutional fiscal rule has helped ease pressure on French government bonds. But the reform would only create a framework whose strength would depend on legislation adopted later. The immediate test of France’s fiscal credibility remains the 2027 budget [article, macro]",
+      "story_ids": []
+    },
+    {
+      "id": "fx-daily-surprise-dollar-strength",
+      "date": "2026-11-24",
+      "title": "FX Daily: Dollar may be heading into overshoot territory",
+      "url": "https://think.ing.com/articles/fx-daily-surprise-dollar-strength/",
+      "summary": "[auto] Mechanical summary (not analysed): USD: Strange price action on Monday It was hard to keep up with FX market price action on Monday. The dollar seemed bid most of the day, but saw a strong leg higher when it was announced that Jensen Huang was rejoining Nvidia and the Nasdaq surged. [article, fx]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1942,6 +1966,10 @@
     {
       "date": "2026-11-23",
       "text": "Auto-ingest (GitHub Actions): 1 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-24",
+      "text": "Auto-ingest (GitHub Actions): 3 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
 }
