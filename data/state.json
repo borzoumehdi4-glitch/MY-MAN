@@ -861,6 +861,14 @@
       "url": "https://think.ing.com/articles/fx-daily-surprise-dollar-strength/",
       "summary": "[auto] Mechanical summary (not analysed): USD: Strange price action on Monday It was hard to keep up with FX market price action on Monday. The dollar seemed bid most of the day, but saw a strong leg higher when it was announced that Jensen Huang was rejoining Nvidia and the Nasdaq surged. [article, fx]",
       "story_ids": []
+    },
+    {
+      "id": "rates-spark-equity-sentiment-versus-inflation-re",
+      "date": "2026-11-24",
+      "title": "Rates Spark: Treasuries with blinkers on",
+      "url": "https://think.ing.com/articles/rates-spark-equity-sentiment-versus-inflation-reality/",
+      "summary": "[auto] Mechanical summary (not analysed): The downtrend in yield to be frustrated by Wednesday's PCE report The US consumer confidence report from the Conference Board is worthy of note. It was conducted mostly after the midterm elections, and in that sense reflects a degree of satisfaction among the US electorate. [article, rates]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1970,6 +1978,10 @@
     {
       "date": "2026-11-24",
       "text": "Auto-ingest (GitHub Actions): 3 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-24",
+      "text": "Auto-ingest (GitHub Actions): 1 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
 }
