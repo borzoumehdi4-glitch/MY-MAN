@@ -869,6 +869,22 @@
       "url": "https://think.ing.com/articles/rates-spark-equity-sentiment-versus-inflation-reality/",
       "summary": "[auto] Mechanical summary (not analysed): The downtrend in yield to be frustrated by Wednesday's PCE report The US consumer confidence report from the Conference Board is worthy of note. It was conducted mostly after the midterm elections, and in that sense reflects a degree of satisfaction among the US electorate. [article, rates]",
       "story_ids": []
+    },
+    {
+      "id": "rates-spark-no-risk-appetite-for-thanksgiving-di",
+      "date": "2026-11-25",
+      "title": "Rates Spark: No risk appetite for Thanksgiving dinner",
+      "url": "https://think.ing.com/articles/rates-spark-no-risk-appetite-for-thanksgiving-dinner/",
+      "summary": "[auto] Mechanical summary (not analysed): US Treasuries resisting bearish pressures Treasuries are showing remarkable resilience to a set of data that as a whole can only be described as upbeat. Core PCE inflation at 3.3% year-on-year, jobless claims below 200k and GDP revised up on consumer spending. Yet, the 10yr UST yield is holding steady in the low 4.8% area. [article, macro/rates]",
+      "story_ids": []
+    },
+    {
+      "id": "minutes-of-ecbs-october-meeting-confirm-tighteni",
+      "date": "2026-11-26",
+      "title": "Minutes of ECB’s October meeting confirm tightening bias",
+      "url": "https://think.ing.com/articles/minutes-of-ecbs-october-meeting-confirm-tightening-bias/",
+      "summary": "[auto] Mechanical summary (not analysed): The minutes of the ECB's October meeting confirm a clear tightening bias and suggest a rate hike at the December meeting is almost a done deal [article, macro]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -1982,6 +1998,10 @@
     {
       "date": "2026-11-24",
       "text": "Auto-ingest (GitHub Actions): 1 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-26",
+      "text": "Auto-ingest (GitHub Actions): 2 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
 }
