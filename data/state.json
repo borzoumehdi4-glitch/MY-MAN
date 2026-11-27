@@ -885,6 +885,46 @@
       "url": "https://think.ing.com/articles/minutes-of-ecbs-october-meeting-confirm-tightening-bias/",
       "summary": "[auto] Mechanical summary (not analysed): The minutes of the ECB's October meeting confirm a clear tightening bias and suggest a rate hike at the December meeting is almost a done deal [article, macro]",
       "story_ids": []
+    },
+    {
+      "id": "french-economy-sinks-deeper-into-gloom",
+      "date": "2026-11-27",
+      "title": "French economy sinks deeper into gloom",
+      "url": "https://think.ing.com/articles/french-economy-sinks-deeper-into-gloom/",
+      "summary": "[auto] Mechanical summary (not analysed): EUROPE: France’s third-quarter GDP contraction was deeper than previously estimated, confirming the sharp deterioration in the economy. Domestic demand shows no sign of recovery and the labour market is weakening. We now expect growth of just 0.1% in 2026 and 0.4% in 2027. The only good news is that inflationary pressures are easing [article, macro]",
+      "story_ids": []
+    },
+    {
+      "id": "fx-daily-green-friday",
+      "date": "2026-11-27",
+      "title": "FX Daily: Green Friday",
+      "url": "https://think.ing.com/articles/fx-daily-green-friday/",
+      "summary": "[auto] Mechanical summary (not analysed): USD: Stocks rebound doesn't mean broad dollar losses US markets reopen today for a shortened session, meaning a full return to normal FX liquidity will have to wait until Monday. Still, the risk backdrop is markedly more positive. [article, fx/macro]",
+      "story_ids": []
+    },
+    {
+      "id": "hedge-funds-like-gilts-but-not-the-risks",
+      "date": "2026-11-27",
+      "title": "Hedge funds like gilts, but not the risks",
+      "url": "https://think.ing.com/articles/hedge-funds-like-gilts-but-not-the-risks/",
+      "summary": "[auto] Mechanical summary (not analysed): Gilt demand increasingly relies on more price-sensitive buyers The Bank of England’s moves to unwind its bond portfolio and persistent government deficits continue to increase the supply of gilts that markets need to absorb. Meanwhile, demand from traditional buyers such as UK pension funds has softened. [article, rates]",
+      "story_ids": []
+    },
+    {
+      "id": "rates-spark-rates-resist-bearish-pressure-as-fra",
+      "date": "2026-11-27",
+      "title": "Rates Spark: Rates resist bearish pressure as France faces rating risk",
+      "url": "https://think.ing.com/articles/rates-spark-rates-resist-bearish-pressure-as-france-faces-rating-risk/",
+      "summary": "[auto] Mechanical summary (not analysed): Bearish dynamics remain contained in European rates despite the ECB’s tightening bias and firmer energy prices. French spreads tightened ahead of S&P’s review, but political uncertainty and budget risks could warrant a negative outlook – and keep investors cautious [article, macro]",
+      "story_ids": []
+    },
+    {
+      "id": "think-ahead-the-ecbs-new-boss-has-timing-on-his",
+      "date": "2026-11-27",
+      "title": "THINK Ahead: The ECB’s new boss has timing on his side",
+      "url": "https://think.ing.com/opinions/think-ahead-the-ecbs-new-boss-has-timing-on-his-side/",
+      "summary": "[auto] Mechanical summary (not analysed): There's never an easy time to be a central banker. But whisper it, new ECB President Pablo Hernández de Cos may just have picked the perfect moment to take charge, writes James Smith [article, macro]",
+      "story_ids": []
     }
   ],
   "stories": [
@@ -2002,6 +2042,10 @@
     {
       "date": "2026-11-26",
       "text": "Auto-ingest (GitHub Actions): 2 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
+    },
+    {
+      "date": "2026-11-27",
+      "text": "Auto-ingest (GitHub Actions): 5 paper(s) added with mechanical summaries labelled [auto]; probabilities unchanged, analysis pending."
     }
   ]
 }
